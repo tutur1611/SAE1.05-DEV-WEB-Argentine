@@ -1,0 +1,20 @@
+header{
+    background-color: #FFD166;
+    justify-items: center;
+    padding: 2em 2em 2em 2em;
+    text-align: center;
+}
+header img{
+    float: left;
+}
+header ul{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    list-style: none;
+    background-color: #74ACDF;
+}
+header li img{
+    width: 10%;
+}
