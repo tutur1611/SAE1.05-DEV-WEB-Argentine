@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Capriola;
+  src: url(./static/polices/Capriola-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./static/polices/montserrat/Montserrat-Regular.otf);
+}
+
+h1, h2, h3{
+    font-family: Capriola;
+}
+p{
+    font-family: Montserrat;
+}
