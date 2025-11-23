@@ -11,16 +11,79 @@ header div {
     justify-content: center;
 }
 
-header nav {
-    border: solid red 3px;
-}
 header nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
 
+
+main {
+    display: flex;
+    flex-direction: column;
+    border: solid red 3px;
+    margin: 15px;
+    padding: 10px;
+}
+
+main p:first-child  {
+    background-color: #ffd166;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;    
+    width: 96%;
+    align-self: center;
+}
+
+#localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#localisation article {
+    width: 55%;
+    background-color: #ffd166;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#localisation iframe{
+    width: 40%;
+    border-radius: 20px;
+}
+
+#infosUtiles {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#infosUtiles h2 {
+    background-color:#74ACDF;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#infosUtiles article {
+    width: 33%;
+}
+
+#infosUtiles article div {
+    background-color: #ffd166;
+    margin: 5px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
 @font-face {
   font-family: Capriola;
   src: url(./static/polices/Capriola-Regular.ttf);
