@@ -46,6 +46,10 @@ h3{
   right: 10px;
 }
 
-p{
+p, blockquote{
   font-family: Montserrat;
+}
+blockquote{
+  text-align: center;
+  font-size: 1.2em;
 }
