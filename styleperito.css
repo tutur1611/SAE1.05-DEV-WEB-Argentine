@@ -29,16 +29,16 @@ font-size: 1.5em;
 }
 
 .bloc-titre{
-padding: 2px 50px 30px 50px;
-background-color: #FFD166;
-text-align: right;
-width: 25%;
-border-radius: 13px;
-margin: 0 auto;
-position: relative;
-font-family: Montserrat;
+  padding: 2px 50px 30px 50px;
+  background-color: #FFD166;
+  text-align: right;
+  width: 25%;
+  border-radius: 13px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Montserrat;
+  }
 
-}
 .sous-titre{
 color: #fff;
 background-color: #333;
@@ -144,7 +144,6 @@ header div img:hover {
 
 footer{
   background-color: #ffd166;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -236,12 +235,20 @@ button a{
 /* Partie Perito Moreno */
 
 .perito{
-    margin: 10em;
+    margin: 2em 10em 5em 10em;
 }
+
+.bloc-titre-perito{
+  padding: 30px 50px 30px 50px;
+  background-color: #FFD166;
+  border-radius: 13px;
+  margin: 0 1em 1em 1em;
+  font-family: Montserrat;
+  }
 
 .NavPerito{
     background-color: #ffd166;
-    padding: 0.1em 1em 0.1em 1em;
+    padding: 0.1em 4em 0.1em 1em;
     border-radius: 13px;
     text-align: center;
     letter-spacing: 2px;
