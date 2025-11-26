@@ -1,20 +1,70 @@
-header{
-    background-color: #FFD166;
-    justify-items: center;
-    padding: 2em 2em 2em 2em;
+@font-face {
+    font-family: Capriola;
+    src: url(./static/polices/Capriola-Regular.ttf);
+  }
+@font-face {
+    font-family: Montserrat;
+    src: url(./static/polices/montserrat/Montserrat-Regular.otf);
+  }
+  
+h1, h2, h3{
+      font-family: Capriola;
+  }
+  
+p{
+      font-family: Montserrat;
+  }
+
+h1{
+    background-color: #ffd166;
     text-align: center;
-}
-header img{
-    float: left;
-}
-header ul{
-    display: flex;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    list-style: none;
+
+  }
+
+nav{
+    background-color: #ffd166;
+    padding: 0.1em 2em 0.1em 2em;
+    margin: 0 30em 0 30em;
+    border-radius: 13px;
+    text-align: center;
+    
+  }
+
+nav h2{
     background-color: #74ACDF;
-}
-header li img{
-    width: 10%;
-}
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+  }
+
+nav ul{
+    width: 20em;
+    list-style: none;
+  }
+
+nav ul a{
+    background-color: #74ACDF;
+    padding: 5px 40px 5px 40px;
+    color: white;
+    border-radius: 13px;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    text-align: center;
+    text-decoration: none;
+  }
+
+nav ul li{
+    margin: 35px 0 7px 30px;
+    transition: 1s;
+  }
+nav ul li:hover{
+    transform: scale(1.10);
+  }
+
+article{
+    background-color: #ffd166;
+    padding: 0.1em 2em 0.1em 2em;
+    margin: 2em;
+    border-radius: 13px;
+  }
