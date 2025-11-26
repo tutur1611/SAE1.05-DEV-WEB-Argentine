@@ -18,47 +18,53 @@ p{
 h1{
     background-color: #ffd166;
     text-align: center;
-
   }
+
+.perito{
+    margin: 10em;
+}
 
 .NavPerito{
     background-color: #ffd166;
-    padding: 0.1em 2em 0.1em 2em;
-    margin: 0 30em 0 30em;
+    padding: 0.1em 1em 0.1em 1em;
     border-radius: 13px;
     text-align: center;
+    letter-spacing: 2px;
+
   }
 
 .NavPerito h2{
     background-color: #74ACDF;
-    padding: 5px 10px 5px 10px;
+    padding: 12px 7.7em 12px 7.9em;
     color: white;
     border-radius: 13px;
     font-size: 2em;
   }
 
 .NavPerito ul{
+    margin: 0 0 0 10em;
     width: 20em;
     list-style: none;
   }
 
-.NavPerito ul a{
-    background-color: #74ACDF;
-    padding: 5px 30px 5px 30px;
+.NavPerito ul li a{
     color: white;
-    border-radius: 13px;
     font-size: 1.2em;
     font-family: Montserrat;
-    text-align: center;
     text-decoration: none;
   }
 
 .NavPerito ul li{
-    margin: 35px 0 7px 30px;
+    border-radius: 13px;
+    padding: 7px 0 7px 0;
+    background-color: #74ACDF;
+    margin: 30px 30px 0 0;
     transition: 1s;
   }
+
 .NavPerito ul li:hover{
-    transform: scale(1.10);
+    transform: scale(1.20);
+    background-color: #7cb7f3;
   }
 
 .PeritoMain article{
@@ -68,12 +74,40 @@ h1{
     border-radius: 13px;
   }
 
-  .PeritoMain article h2{
+.PeritoMain article h2{
     background-color: #74ACDF;
     padding: 5px 7px 5px 7px;
-    margin: 0 32em 0 0;
+    width: 10em;
     color: white;
     border-radius: 13px;
     font-size: 2em;
     text-align: center;
   }
+
+.pic1{
+    padding: 1em 0 0 0;
+}
+
+.pic1 img{
+    width: 13em;
+    border-radius: 13px;
+    border: #74ACDF solid 7px;
+  }
+  
+.UnderHeader{
+    display: flex;
+    flex: nowrap;
+  }
+
+.trekking{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.trekking img{
+    width: 30em;
+    margin: 0.5em 0 0 0;
+    border-radius: 13px;
+    border: #74ACDF solid 7px;
+}
+
