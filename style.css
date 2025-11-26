@@ -1,228 +1,152 @@
-
-header {
-    background-color: #ffd166;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-header div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header nav {
-    border: solid red 3px;
-}
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-@font-face {
-  font-family: Capriola;
-  src: url(./static/polices/Capriola-Regular.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(./static/polices/montserrat/Montserrat-Light.otf);
-}
-
-
-
-h1, h2, h3{
-  font-family: Capriola;
-}
-h1{
-  text-align: center;
-  font-size: 2.5em;
-}
-h2{
-  font-size: 2em;
-}
-h3{
-  font-size: 1.5em;
-}
-
-.bloc-titre{
-  padding: 2px 50px 30px 50px;
-  background-color: #FFD166;
-  text-align: right;
-  width: 25%;
-  border-radius: 13px;
-  margin: 0 auto;
-  position: relative;
-  font-family: Montserrat;
-
-}
-.sous-titre{
-  color: #fff;
-  background-color: #333;
-  border-radius: 5px;
-  font-size: 16pt;
-  text-align: right;
-  position: absolute;
-  padding: 3px 7px;
-  bottom: 10px;
-  right: 10px;
-}
-
-p{
-  font-family: Montserrat;
-}
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-  font-family: Capriola;
-  src: url(./static/polices/Capriola-Regular.ttf);
+font-family: Capriola;
+src: url(./static/polices/Capriola-Regular.ttf);
 }
 @font-face {
-  font-family: Montserrat;
-  src: url(./static/polices/montserrat/Montserrat-Light.otf);
+font-family: Montserrat;
+src: url(./static/polices/montserrat/Montserrat-Light.otf);
 }
 
 
 
 h1, h2, h3{
-  font-family: Capriola;
+font-family: Capriola;
 }
 h1{
-  text-align: center;
-  font-size: 2.5em;
+text-align: center;
+font-size: 2.5em;
 }
 h2{
-  font-size: 2em;
+font-size: 2em;
 }
 h3{
-  font-size: 1.5em;
+font-size: 1.5em;
 }
 
 .bloc-titre{
-  padding: 2px 50px 30px 50px;
-  background-color: #FFD166;
-  text-align: right;
-  width: 25%;
-  border-radius: 13px;
-  margin: 0 auto;
-  position: relative;
-  font-family: Montserrat;
+padding: 2px 50px 30px 50px;
+background-color: #FFD166;
+text-align: right;
+width: 25%;
+border-radius: 13px;
+margin: 0 auto;
+position: relative;
+font-family: Montserrat;
 
 }
 .sous-titre{
-  color: #fff;
-  background-color: #333;
-  border-radius: 5px;
-  font-size: 16pt;
-  text-align: right;
-  position: absolute;
-  padding: 3px 7px;
-  bottom: 10px;
-  right: 10px;
+color: #fff;
+background-color: #333;
+border-radius: 5px;
+font-size: 16pt;
+text-align: right;
+position: absolute;
+padding: 3px 7px;
+bottom: 10px;
+right: 10px;
 }
 
 p{
-  font-family: Montserrat;
+font-family: Montserrat;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }
 
 header div {
-    background-color: #ffd166;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffd166;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 header div h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 header nav {
-    width: 60%;
-    align-self: center;
-    align-items: center;
+  width: 60%;
+  align-self: center;
+  align-items: center;
 }
 
 header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
 .buttonHeader {
-    background-color: #74acdf;
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border-radius: 13px;
-    width: 10em;
-    font-size: 20px;
-    transition: all 1s;
-    color: white;
-    text-decoration: none;
+  background-color: #74acdf;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 13px;
+  width: 10em;
+  font-size: 20px;
+  transition: all 1s;
+  color: white;
+  text-decoration: none;
 }
 
 .buttonHeader:hover {
-    animation: ombre 0.6s ease forwards;
+  animation: ombre 0.6s ease forwards;
 }
 
 
 header div img:hover {
-    animation: rotation 0.6s ease;
+  animation: rotation 0.6s ease;
 }
 
 .buttonHeader img {
-    height: 2em;
-    margin-right: 10px;
+  height: 2em;
+  margin-right: 10px;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 10em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 10em;
 }
 
 .div1 {
-    grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .div1 img {
-    height: 10em;
+  height: 10em;
 }
-    
+  
 .div2 { 
-    grid-area: 1 / 2 / 2 / 5; 
+  grid-area: 1 / 2 / 2 / 5; 
 
 }
 
 .div3 { 
-    grid-area: 1 / 5 / 2 / 6; 
+  grid-area: 1 / 5 / 2 / 6; 
 
 }
 
 footer{
-    background-color: #ffd166;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  background-color: #ffd166;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 
@@ -236,75 +160,75 @@ grid-row-gap: 0px;
 }
 
 .footerDiv1 {
-     grid-area: 1 / 1 / 2 / 3;
-     display: flex;
-     align-items: flex-end;
-     padding: 1em;
+   grid-area: 1 / 1 / 2 / 3;
+   display: flex;
+   align-items: flex-end;
+   padding: 1em;
 }
 .footerDiv2 {
-     grid-area: 1 / 3 / 2 / 4;
-     display: flex;
-     align-items: center;
-     justify-content: right;
-     gap: 3em;
-     margin-right: 4em;
+   grid-area: 1 / 3 / 2 / 4;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   gap: 3em;
+   margin-right: 4em;
 }
 
 .footerDiv2 img{
-     width: 10em;
-     order: 2;
-     transition: all 1s ease-in-out;
+   width: 10em;
+   order: 2;
+   transition: all 1s ease-in-out;
 }
 
 .footerDiv2 img:hover{
-    transform: rotateZ(360deg) scale(0.5);
-    transition: all 1s ease-in-out;
+  transform: rotateZ(360deg) scale(0.5);
+  transition: all 1s ease-in-out;
 
 }
 
 button{
-    width: 8em;
-    height: 3em;
-    text-align: center;
-    text-decoration: underline;
-    background-color: #74ACDF;
-    font-size: 1.2em;
-    border-radius: 13px;
-    border: none;
-    text-decoration: none;
+  width: 8em;
+  height: 3em;
+  text-align: center;
+  text-decoration: underline;
+  background-color: #74ACDF;
+  font-size: 1.2em;
+  border-radius: 13px;
+  border: none;
+  text-decoration: none;
 }
 
 button:hover{
-    animation: ombre 0.6s ease forwards;
+  animation: ombre 0.6s ease forwards;
 }
 
 button a{
-    color: #FFFFFF;
-    font-family: Capriola;
-    text-decoration: none;
+  color: #FFFFFF;
+  font-family: Capriola;
+  text-decoration: none;
 }
 
 
 @keyframes ombre {
-    0% {
+  0% {
 
-    }
+  }
 
-    100% {
-        background-color: #7cb7f3;
-        box-shadow: 4px 4px 0 #ffd166;
-        transform: scale(1.05);
-        transition: all 1s;
-        cursor: pointer;
-    }
+  100% {
+      background-color: #7cb7f3;
+      box-shadow: 4px 4px 0 #ffd166;
+      transform: scale(1.05);
+      transition: all 1s;
+      cursor: pointer;
+  }
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 
 }
