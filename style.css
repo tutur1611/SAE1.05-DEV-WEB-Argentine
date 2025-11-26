@@ -21,6 +21,10 @@ header nav ul{
 }
 
 
+li{
+    font-family: Montserrat;
+}
+
 @font-face {
   font-family: Capriola;
   src: url(./static/polices/Capriola-Regular.ttf);

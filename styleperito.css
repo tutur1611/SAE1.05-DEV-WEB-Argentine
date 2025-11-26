@@ -21,16 +21,15 @@ h1{
 
   }
 
-nav{
+.NavPerito{
     background-color: #ffd166;
     padding: 0.1em 2em 0.1em 2em;
     margin: 0 30em 0 30em;
     border-radius: 13px;
     text-align: center;
-    
   }
 
-nav h2{
+.NavPerito h2{
     background-color: #74ACDF;
     padding: 5px 10px 5px 10px;
     color: white;
@@ -38,14 +37,14 @@ nav h2{
     font-size: 2em;
   }
 
-nav ul{
+.NavPerito ul{
     width: 20em;
     list-style: none;
   }
 
-nav ul a{
+.NavPerito ul a{
     background-color: #74ACDF;
-    padding: 5px 40px 5px 40px;
+    padding: 5px 30px 5px 30px;
     color: white;
     border-radius: 13px;
     font-size: 1.2em;
@@ -54,17 +53,26 @@ nav ul a{
     text-decoration: none;
   }
 
-nav ul li{
+.NavPerito ul li{
     margin: 35px 0 7px 30px;
     transition: 1s;
   }
-nav ul li:hover{
+.NavPerito ul li:hover{
     transform: scale(1.10);
   }
 
-article{
+.PeritoMain article{
     background-color: #ffd166;
-    padding: 0.1em 2em 0.1em 2em;
+    padding: 0.5em 2em 0.1em 2em;
     margin: 2em;
     border-radius: 13px;
+  }
+
+  .PeritoMain article h2{
+    background-color: #74ACDF;
+    padding: 5px 7px 5px 7px;
+    margin: 0 32em 0 0;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
   }
