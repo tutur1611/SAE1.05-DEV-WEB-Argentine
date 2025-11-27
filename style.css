@@ -64,9 +64,11 @@ h3{
     border-radius: 13px;
   }
 
-img{
+.bordered-images{
     border: 6px solid #74ACDF;
     border-radius: 13px;
+    margin: 2em;
+
 }
 
 p, blockquote{
