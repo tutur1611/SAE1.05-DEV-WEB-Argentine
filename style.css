@@ -13,7 +13,6 @@ body {
 }
 
 
-
 h1, h2, h3{
   font-family: Capriola;
 }
@@ -22,7 +21,14 @@ h1{
   font-size: 2.5em;
 }
 h2{
-  font-size: 2em;
+    background-color: #74ACDF;
+    padding: 5px 10px;
+    width: fit-content;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
 }
 h3{
   font-size: 1.5em;
@@ -51,9 +57,31 @@ h3{
   right: 10px;
 }
 
-p{
+.zone-de-texte{
+    background-color: #ffd166;
+    padding:1.5em ;
+    margin: 2em;
+    border-radius: 13px;
+  }
+
+.bordered-images{
+    border: 6px solid #74ACDF;
+    border-radius: 13px;
+    margin: 2em;
+
+}
+
+p, blockquote{
   font-family: Montserrat;
 }
+
+blockquote{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+
 
 header {
     display: flex;
@@ -232,3 +260,4 @@ button a{
     }
 
 }
+
