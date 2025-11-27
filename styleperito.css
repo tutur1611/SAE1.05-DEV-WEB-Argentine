@@ -248,7 +248,7 @@ button a{
 
 .NavPerito{
     background-color: #ffd166;
-    padding: 0.1em 4em 0.1em 1em;
+    padding: 0.1em 1em 1em 1em;
     border-radius: 13px;
     text-align: center;
     letter-spacing: 2px;
@@ -333,3 +333,46 @@ button a{
     border: #74ACDF solid 7px;
 }
 
+.bigimage img{
+  width: 100%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.velage img{
+  width: 35em;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+}
+
+.velage figcaption{
+  font-family: Montserrat;
+  float: right;
+  font-size: 0.7em;
+}
+
+.velage div{
+  display: flex;
+  align-items: flex-start;
+}
+
+.velage figure{
+  margin: -75px 1em 2em 2em;
+}
+
+.velage{
+  margin: 100em;
+}
+
+.localisation div{
+  display: flex;
+  align-items: flex-start;
+}
+
+.localisation iframe{
+  height: 20em;
+  width: 110em;
+  margin: -70px 1em 2em 2em;
+  border-radius: 13px;
+}
