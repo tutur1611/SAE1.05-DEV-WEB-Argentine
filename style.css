@@ -62,6 +62,7 @@ h3{
     padding:1.5em ;
     margin: 2em;
     border-radius: 13px;
+    height: fit-content;
   }
 
 .bordered-images{
@@ -73,11 +74,13 @@ h3{
 
 p, blockquote{
   font-family: Montserrat;
+  font-size: 1.2em;
 }
+
 
 blockquote{
   text-align: center;
-  font-size: 1.2em;
+  
 }
 
 
@@ -259,5 +262,17 @@ button a{
         transform: rotate(360deg);
     }
 
+}
+
+
+
+.persoPresentationGenerale{
+    display: flex;
+    flex-direction: row;
+}
+
+.persoBiographieClubs{
+    display: flex;
+    flex-direction: row;
 }
 
