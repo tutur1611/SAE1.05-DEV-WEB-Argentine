@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Header et Footer pour notre site !!!">
+    <title>Argentina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+
 <body>
     <header>
-        <div>
-            <img src="#" alt="Drapeau argentin" title="Drapeau argentin">
-            <h1>Argentina</h1>
+        <div class="parent">
+            <div class="div1"> <img src="./static/commun/logoFlag.png" alt="Drapeau argentin" title="Drapeau argentin"> </div>
+            <div class="div2"> <h1>Argentina</h1> </div>
+            <div class="div3"> </div>
         </div>
         <nav>
             <ul>
                 <li>
-                    <button class="button"><img src="./static/commun/home_icon.png" alt="Image pour accueil">Accueil</button>
+                    <button class="buttonHeader"><img src="./static/commun/home_icon.png" alt="Image pour accueil">Accueil</button>
                 </li>
                 <li>
-                    <button class="button"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages">Personnages</button>
+                    <button class="buttonHeader"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages">Personnages</button>
                 </li>
                 <li>
-                    <button class="button"><img src="./static/commun/art_icone.png" alt="Image pour Art">Art</button>
+                    <button class="buttonHeader"><img src="./static/commun/art_icone.png" alt="Image pour Art">Art</button>
                 </li>
                 <li>
-                    <button class="button"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux">Lieux</button>
+                    <button class="buttonHeader"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux">Lieux</button>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="acMain">
-        <p>
-            L’Argentine est un vaste pays d’Amérique du Sud connu pour la diversité de ses paysages, sa culture vibrante et sa passion du football. De la cordillère des Andes aux plages atlantiques, en passant par les plaines fertiles de la pampa et les glaciers de Patagonie, elle offre une richesse naturelle et culturelle unique. Sa capitale, Buenos Aires, est célèbre pour son ambiance cosmopolite, sa musique du tango et sa gastronomie raffinée.
-        </p>
-        <br>
-        <br>
-        <section id="localisation">
+    <main id="acMain">
+        <p id="description">L’Argentine est un vaste pays d’Amérique du Sud connu pour la diversité de ses paysages, sa culture vibrante et sa passion du football. De la cordillère des Andes aux plages atlantiques, en passant par les plaines fertiles de la pampa et les glaciers de Patagonie, elle offre une richesse naturelle et culturelle unique. Sa capitale, Buenos Aires, est célèbre pour son ambiance cosmopolite, sa musique du tango et sa gastronomie raffinée.</p>
+        <section id="geographie">
             <article>
                 <p>L’Argentine se situe dans l’hémisphère sud et occidental, entre le 22° et le 55° parallèle sud.</p>
                 <ul>
@@ -43,92 +46,115 @@
                     <li>La capitale est Buenos Aires et les grandes villes sont Córdoba, Rosario et Mendoza.</li>
                 </ul>
             </article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18414303.644669186!2d-71.26668653241714!3d-36.98617266315987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentine!5e1!3m2!1sfr!2sfr!4v1763813689792!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
-        </section>
-
-
-        <section id="infosUtiles">
-            <article>
-                <div>
-                    <h2>Devise</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31176381.201718647!2d-84.81901423956239!3d-36.47382157108401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentine!5e1!3m2!1sfr!2sfr!4v1764170497158!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>  
+        
+        <section id="infosCles">
+            <div class="titre"><h2>Infos clés</h2></div>
+            <div class="accueilParent">
+                <div class="elem1" id="devise">
+                    <h3>Devise</h3> 
                     <p>En unión y libertad</p>
                 </div>
-                <div>
-                    <h2>Population</h2>
-                    <p>~46 Millions d'habitants</p>
+                <div class="elem1" id="population">
+                    <h3>Population</h3>
+                    <p>~46 millions d'habitants</p>
                 </div>
-                <div>
-                    <h2>Densité</h2>
+                <div class="elem1" id="densite">
+                    <h3>Densité</h3>
                     <p>~16 Hab/Km²</p>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Drapeau</h2>
-                    <img src="./static/commun/logoFlag.png" alt="Logo du drapeau de l'Argentine">
-                </div>  
+                <div id="drapeau">
+                    <h3>Drapeau</h3>
+                    <img src="./static/commun/logoFlag.png" alt="Logo du drapeau argentin" title="Drapeau argentin">
+                </div>
+                <div id="hymne">
+                    <h3>Hymne national</h3>
+                    <audio controls="controls" src="./static/C21_Accueil/#" ></audio>
+                </div>
+                <div id="monnaie">
+                    <h3>Monnaie</h3>
+                    <figure>
+                        <img src="./static/C21_Accueil/pesso.jpg" alt="Billet de 10 pessos argentin" title="Pessos argentin">
+                        <figcaption>Billet de 10 pessos argentin</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+        <section id="historique">
+            <div class="titre"><h2>Infos clés</h2></div>            <nav>
+            <nav>
+                <ul>
+                    <li><button>1516</button></li>
+                    <li><button>1810</button></li>
+                    <li><button>1816</button></li>
+                    <li><button>1880</button></li>
+                    <li><button>1946</button></li>
+                    <li><button>1983</button></li>
+                    <li><button>2022</button></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>|</li>
+                    <li>|</li>
+                    <li>|</li>
+                    <li>|</li>
+                    <li>|</li>
+                    <li>|</li>
+                    <li>|</li>
+                </ul>
+            </nav>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, assumenda! Ex veniam earum totam reiciendis nulla numquam minima unde rem expedita similique, aperiam id reprehenderit accusantium accusamus blanditiis officiis culpa.</p>
+        </section>  
+        
+        <section>
+            <h2>Découvrez également</h2>
+            <div>
+                <article>
+                    <h3>Art</h3>
+                    <img src="./static/C21_Œuvre/San-diego-del-barrio-de-la-boca.jpg" alt="#">
                 </article>
-            <article>
-                <div>
-                    <h2>Hymne national</h2>
-                    <audio src="#" controls="controls" preload="auto"><p>Le navigateur ne supporte pas la balise audio</p></audio>
-                </div>
-                <div>
-                    <h2>Monnaie</h2>
-                    <img src="./static/C21_Accueil/pesso.jpg" alt="Photo d'un billet de 10 pessos argenitin">
-                </div>
-            </article>
+                <article>
+                    <h3>Lieux</h3>
+                    <img src="./static/C21_lieux/" alt="#">
+                </article>
+                <article>
+                    <h3>Personnalités</h3>
+                    <img src="./static/C21_Personnage/maradona.jpg" alt="#">
+                </article>
+            </div>
         </section>
-        <section>
-            <h1>Dates clés</h1>
-            <ul>
-                <li>1516</li>
-                <li>1810</li>
-                <li>1816</li>
-                <li>1880</li>
-                <li>1946</li>
-                <li>1983</li>
-                <li>2022</li>
-            </ul>
-            <ul>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-                <li>|</li>
-            </ul>
-            <article>
-                <h3>1516</h3>
-                <h5>Découverte du Río de la Plata par l’explorateur espagnol Juan Díaz de Solís.</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi ligula, rutrum vel pellentesque ac, hendrerit eget est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vel lorem ac nunc vulputate mollis non a ex</p>
-            </article>
-        </section>
-        <article>
-            <h2>Modalités d'entrée</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, mollitia, quisquam adipisci laborum nesciunt veritatis porro beatae hic consectetur maxime eius obcaecati omnis dicta assumenda aliquid officiis? Architecto, reprehenderit error!</p>
-        </article>
-        <section>
-            <h1>Découvrez également</h1>
-            <article>
-                <div>
-                    <h2>Art</h2>
-                    <img src="./static/C21_Œuvre/San-diego-del-barrio-de-la-boca.jpg" alt="Image de l'oeuvre 'San-diego-del-barrio-de-la-boca'" title="San-diego-del-barrio-de-la-boca">
-                </div>
-                <div>
-                    <h2>Lieux</h2>
-                    <img src="./static/C21_lieux/PeritoMoreno2.jpg" alt="Image du Perito Moreno" title="Le Perito Moreno">
-                </div>
-                <div>
-                    <h2>Personnalités</h2>
-                    <img src="./static/C21_Personnage/maradona.jpg" alt="Image de Diego maradona" title="Diego Maradone">
-                </div>
-            </article>
-        </section>
+
     </main>
 
-    <footer>
+
+
+     <footer>
+        <div class="footerParent">
+
+            <div class="footerDiv1"> 
+
+                <p>
+                SAE1.05 Recueil du besoin pour le Web<br>Projet fait dans le cadre du BUT informatique à l’IUT de Lannion<br><br>
+                Groupe C21 : Arthur CHARTIER - Pierre-Alain WESTER<br>Louis LE BIHAN - Terence CHARDES
+                </p>
+            </div>
+
+            <div class="footerDiv2">
+                <button class="button"><a href="mailto:perenoel@gmail.com">Contact</a></button>
+                <button class="button"><a href="mailto:squeezie@gmail.com">Webmaster</a></button>
+
+                <img src="./static/commun/logoFlag.png" title="logoFlag" alt="Drapeau de l'Argentine">
+            </div>
+
+        </div>
 
     </footer>
+
+
 </body>
+
+
+</html>
