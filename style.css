@@ -17,10 +17,17 @@ body {
 h1, h2, h3{
   font-family: Capriola;
 }
-h1{
+main h1{
+  background-color: #74ACDF;
+  color: #FFFFFF;
   text-align: center;
   font-size: 2.5em;
+  padding: 0.25em;
+  border-radius: 10px;
 }
+
+
+
 h2{
   font-size: 2em;
 }
@@ -144,7 +151,6 @@ header div img:hover {
 
 footer{
     background-color: #ffd166;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -232,4 +238,25 @@ button a{
         transform: rotate(360deg);
     }
 
+}
+
+#ovr{
+    width: 50%;
+    margin: auto;
+}
+
+.artDimensions{
+    width: 50%;
+}
+
+.artDimensions h1{
+    width: 50%;
+}
+
+.artLieux{
+    width: 50%;
+}
+
+.artLieux h1{
+    width: 30%;
 }
