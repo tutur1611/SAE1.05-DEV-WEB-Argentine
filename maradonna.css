@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Capriola;
+  src: url(./static/polices/Capriola-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./static/polices/montserrat/Montserrat-Light.otf);
+}
+
+
+.bloc-titre{
+  padding: 2px 50px 30px 50px;
+  background-color: #FFD166;
+  text-align: right;
+  width: 25%;
+  border-radius: 13px;
+  margin: 0 auto;
+  position: relative;
+  font-family: Montserrat;
+
+}
+.sous-titre{
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 16pt;
+  text-align: right;
+  position: absolute;
+  padding: 3px 7px;
+  bottom: 10px;
+  right: 10px;
+}
+
+h2{
+    background-color: #74ACDF;
+    padding: 5px 10px;
+    width: fit-content;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+p, blockquote{
+  font-family: Montserrat;
+  font-size: 1.2em;
+}
+
+
+blockquote{
+  text-align: center;
+  
+}
+
+.bordered-images{
+    border: 6px solid #74ACDF;
+    border-radius: 13px;
+    margin: 1em;
+    height: fit-content;
+}
+
+
+.zone-de-texte{
+    background-color: #ffd166;
+    padding:1.5em ;
+    margin: 1em;
+    border-radius: 13px;
+    height: fit-content;
+    
+}
+
+.clubs{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.club{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 1em;
+    text-align: center;
+    width : 33%;
+    margin : 0.4em 0.5em
+}
+
+.biographie{
+    width: 50%;
+}
+
+.persoHorizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+.persoVertical{
+    display: flex;
+    flex-direction: column;
+}
+
