@@ -55,7 +55,7 @@ h3{
   position: absolute;
   padding: 3px 7px;
   bottom: 10px;
-  right: 10px;
+  right: 50px;
 }
 
 p{
@@ -255,6 +255,12 @@ button a{
 
 }
 
+main{
+    margin: auto;
+    width: 80%;
+}
+
+
 #ovr{
     width: 50%;
     margin: auto;
@@ -274,4 +280,43 @@ button a{
 
 .artLieux h1{
     width: 30%;
+}
+
+/* ============= */
+/* ART SECTION 1 */
+/* ============= */
+
+
+.ArtSection1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.part2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.ArtSection1 .bloc-titre{
+    width: auto;
+    height: 8em;
+}
+
+.ArtSection1 .sous-titre{
+    font-size: 0.5em;
+}
+
+#st1{
+    margin-right: 6em;
+}
+
+.ArtSection1 img{
+    height: 30em;
+    width: 30em;
 }
