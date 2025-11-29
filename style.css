@@ -40,6 +40,7 @@ h3{
   background-color: #FFD166;
   text-align: right;
   width: 25%;
+  height: auto;
   border-radius: 13px;
   margin: 0 auto;
   font-family: Montserrat;
@@ -290,26 +291,88 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 1em;
+    grid-row-gap: 0em;
+    margin-bottom: 2em;
+    justify-items: center;
 }
 
 .part2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0em;
+    grid-row-gap: 1em;
+    align-self: end;
+    align-items: flex-end;
+    justify-items: end;
+
 }
 
-.ArtSection1 .bloc-titre{
+.topPart2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.part2 .bloc-titre{
     width: auto;
-    height: 30%;
+    justify-self: end;
+}
+
+.SliderArt{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.ArtSection1 > img{
+    max-width: 100%;
+    max-height: 100%;
+    border: solid #74ACDF 0.5em;
+    border-radius: 10px;
+}
+
+.SliderArt img{
+   
+   height: 40%;
+   width: 71%;
+   border: solid #74ACDF 0.5em;
+   border-radius: 10px;
 }
 
 
 
-.ArtSection1 img{
-    height: 30em;
+/* ============= */
+/* ART SECTION 7 */
+/* ============= */
+
+.ArtSection7{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0em;
+    margin-bottom: 2em;
+    justify-items: center;
+}
+
+.ArtSection7 .bloc-titre{
     width: 30em;
+    height: fit-content;
+    text-align: left;
+    justify-self: center;
+    
+}
+
+.ArtSection7 img{
+    max-width: 18em;
+    height: auto;
+    border: solid #74ACDF 10px;
+    border-radius: 10px;
+    justify-self: end;
+    margin-right: 4em;
+    
+    
 }
