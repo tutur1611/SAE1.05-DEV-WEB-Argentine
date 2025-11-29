@@ -7,7 +7,6 @@
   src: url(./static/polices/montserrat/Montserrat-Light.otf);
 }
 
-
 .bloc-titre{
   padding: 2px 50px 30px 50px;
   background-color: #FFD166;
@@ -41,25 +40,54 @@ h2{
     text-align: center;
     margin: 0;
 }
+#text-center{
+  margin: 0 auto;
+}
 
 p, blockquote{
   font-family: Montserrat;
   font-size: 1.2em;
 }
 
-
 blockquote{
   text-align: center;
-  
+}
+
+
+
+.bordered-images, iframe, figure > img{
+  border: 6px solid #74ACDF; 
+  border-radius: 13px;
 }
 
 .bordered-images{
-    border: 6px solid #74ACDF;
-    border-radius: 13px;
-    margin: 1em;
     height: fit-content;
+    flex-shrink: 0;
+    margin: 1em;
 }
 
+iframe{
+    width: 100%;
+    margin : 1em;
+}
+
+figure{
+  margin: 0 1em 1em 1em;
+
+}
+
+figcaption{
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-family: Capriola;
+  text-align: center;
+}
+
+figure > img{
+  width: 400px;
+  height : 200px;
+  object-fit: cover;
+}
 
 .zone-de-texte{
     background-color: #ffd166;
@@ -70,11 +98,33 @@ blockquote{
     
 }
 
+.persoHorizontal{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.persoVertical{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+
+.biographie{
+    width: 50%;
+}
+
 .clubs{
     display: flex;
     flex-direction: row;
     text-align: center;
-    width:35vw;
+    width:500px;
+    margin-top: 1em
 
 }
 
@@ -87,20 +137,18 @@ blockquote{
     font-size: 1em;
     text-align: center;
     width : 33%;
-    margin : 0.2em 0em
+    margin : 0.2em 0em;
+    transition: 0.2s;
 }
 
-.biographie{
-    width: 50%;
+.club:hover {
+    transform: scale(1.05);
 }
 
-.persoHorizontal{
-    display: flex;
-    flex-direction: row;
+.palmares{
+  margin-top: 1em;
 }
 
-.persoVertical{
-    display: flex;
-    flex-direction: column;
-}
+
+
 

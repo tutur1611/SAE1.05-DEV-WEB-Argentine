@@ -49,42 +49,76 @@
                     </div>
                     <section class="persoHorizontal">
                         <div class="zone-de-texte">
-                            <h2>Clubs</h2>
+                            <h2 id="text-center">Clubs</h2>
                             <div class="clubs">
-                                <div class="club">
+                                <div class="club" id="club1">
                                     <img src="static/C21_Personnage/clubs/argentinos.png" width="70" alt="logo">
                                     AA Argentinos<br>Juniors<br>1976-1981
                                 </div>
-                                <div class="club">
+                                <div class="club" id="club2">
                                     <img src="static/C21_Personnage/clubs/boca.png" width="70" alt="logo">
                                     CA Boca<br>Juniors<br>1981-1982
                                 </div>
-                                <div class="club">
+                                <div class="club" id="club3">
                                     <img src="static/C21_Personnage/clubs/barcelone.png" width="70" alt="logo">
                                     FC<br>Barcelone<br>1982-1984
                                 </div>
                             </div>
                             <div class="clubs">
-                                <div class="club">
+                                <div class="club" id="club4">
                                     <img src="static/C21_Personnage/clubs/napoli.png" width="70" alt="logo">
-                                    SS Calcio<br>Napoli<br>1984-1992
+                                    SSC Calcio<br>Napoli<br>1984-1992
                                 </div>
-                                <div class="club">
+                                <div class="club" id="club5">
                                     <img src="static/C21_Personnage/clubs/sevile.png" width="70" alt="logo">
-                                    FC<br>Sevile<br>1992-1993
+                                    FC<br>Seville<br>1992-1993
                                 </div>
-                                <div class="club">
+                                <div class="club" id="club6">
                                     <img src="static/C21_Personnage/clubs/oldboys.png" width="70" alt="logo">
                                     Newell'ss<br>old boys<br>1993
                                 </div>
                             </div>
                         </div>
+
+                        <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23403362.406969078!2d-85.27658276086802!3d-25.55792430569759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9fcdf7b6361%3A0x81d7742c61cdb1b3!2sAsociaci%C3%B3n%20Atl%C3%A9tica%20Argentinos%20Juniors!5e0!3m2!1sfr!2sfr!4v1764423968728!5m2!1sfr!2sfr" frameborder="0"></iframe>
                     </section>
                     
                 </section>
-                <img class="bordered-images" src="static/C21_Personnage/maradona.jpg" width="1200" title="Maradonna à la coupe du monde" alt="image de maradonna sur le terrain a la coupe du monde">
+                <img class="bordered-images maradona-img" src="static/C21_Personnage/maradona.jpg" width="500" title="Maradonna à la coupe du monde" alt="image de maradonna sur le terrain a la coupe du monde">
 
             </section>
+
+            <section class="persoHorizontal">
+                <section class="persoVertical">
+                    <h2 id="text-center">Palmarès</h2>
+                        <div class="palmares">
+
+                            <section class="persoHorizontal wrap">
+                                <figure>
+                                    <img src="static/C21_Personnage/palmares/maradona-coupe-monde.jpg">
+                                    <figcaption>Coupe du Monde 1986</figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img src="static/C21_Personnage/palmares/ballon-d-or.jpg">
+                                    <figcaption>Ballon d’or 1986</figcaption>
+                                </figure>
+                            </section>
+                            <section class="persoHorizontal wrap">
+                                <figure>
+                                    <img src="static/C21_Personnage/palmares/champion-argentine.png">
+                                    <figcaption>Champion d’Italie 1987</figcaption>
+                                </figure>
+
+                                <figure>
+                                    <img src="static/C21_Personnage/palmares/champion-italie.jpg">
+                                    <figcaption>Champion d’Argentine 1981</figcaption>
+                                </figure>
+                            </section>
+                        </div>
+                </section>
+            </section>
+            
             
                 
         </main>
@@ -108,7 +142,8 @@
                 </div>
 
             </div>
-
         </footer>
+
+        <script src="maradonna-logic.js"></script>
     </body>
 </html>
