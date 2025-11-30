@@ -44,9 +44,22 @@ h2{
   margin: 0 auto;
 }
 
+p{
+  margin: 1em 0 0 0;
+}
 p, blockquote{
   font-family: Montserrat;
   font-size: 1.2em;
+}
+li{
+  font-family: Montserrat;
+  font-size: 1.5em;
+}
+li li{
+  font-size: 1em; /*pour éviter que les listes dans les listes héritent 2 fois du 1.2em*/
+}
+.statistiques > ul{
+  line-height: 2.3em;
 }
 
 blockquote{
@@ -55,7 +68,7 @@ blockquote{
 
 
 
-.bordered-images, iframe, figure > img{
+.bordered-images, iframe, figure > img, .slider > img{
   border: 6px solid #74ACDF; 
   border-radius: 13px;
 }
@@ -83,10 +96,15 @@ figcaption{
   text-align: center;
 }
 
-figure > img{
-  width: 400px;
-  height : 200px;
+.palmares > section > figure > img{
+  width: 500px;
+  height : 250px;
   object-fit: cover;
+}
+
+.cinema > section > figure > img{
+    height: 350px;
+
 }
 
 .zone-de-texte{
@@ -101,7 +119,6 @@ figure > img{
 .persoHorizontal{
     display: flex;
     flex-direction: row;
-
 }
 
 .persoVertical{
@@ -145,10 +162,25 @@ figure > img{
     transform: scale(1.05);
 }
 
-.palmares{
+.bloc-clubs-statistiques{
+  padding: 1em;
+
+}
+.bloc-multimedia{
+  align-items: center;
+  justify-content: space-around;
+}
+.bloc-images{
   margin-top: 1em;
 }
 
+.statistiques{
+  width: 500px
+}
 
-
+.slider > img{
+  width:700px;
+  height: 350px;
+  object-fit: cover;
+}
 
