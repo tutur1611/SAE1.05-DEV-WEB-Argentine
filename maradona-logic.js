@@ -7,7 +7,7 @@ var clubMaps = {
     club6: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26358099.547109555!2d-79.63532983281634!3d-25.150287308878543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab44524e837b%3A0x8567456159008b34!2sBoys%20Club%20Atletico%20Newell%20S%20Old!5e0!3m2!1sfr!2sfr!4v1764425159209!5m2!1sfr!2sfr"
 };
 function initClubClicks() {
-    var clubs = document.querySelectorAll(".club");
+    var clubs = document.querySelectorAll(".perso-club");
     //parcours tous les éléments avec des classe club et y met un Ecouteur de click dessus, en gros ça écoute en continu jusqu'a ce qu'il y a un clique
     //au clique, ca displayMap
     for (var i = 0; i < clubs.length; i++) {

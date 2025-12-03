@@ -10,56 +10,59 @@
 /*---------------------------------------------------Responsive-----------------------------------------------------------*/
 
 @media (min-width: 1400px){/*Format Ordinateur*/
-  .bloc-titre{width: fit-content;}
-  .persoHorizontal{flex-direction: row;}
-  iframe{
+  /*---------------------------------------------------Perso Ordinateur-----------------------------------------------------------*/
+
+  .perso-bloc-titre{width: fit-content;}
+  .perso-horizontal{flex-direction: row;}
+  .perso-iframe{
     margin : 1em;
     width: 100%;
   }
-  .clubs{width:500px;}
-  .bordered-images{margin: 1em;}
-  .club > img{width : 70px}
-  .maradona-img{width: 500px;}
-  .palmares > section > figure > img{width: 400px;}
-  .cinema > section > figure > img{height: 350px; }
-  .slider > img{
+  .perso-clubs{width:500px;}
+  .perso-bordered-images{margin: 1em;}
+  .perso-club > .perso-img{width : 70px}
+  .perso-maradona-img{width: 500px;}
+  .perso-palmares > section > .perso-figure > .perso-img{width: 400px;}
+  .perso-cinema > section > .perso-figure > .perso-img{height: 350px; }
+  .perso-slider > .perso-img{
     width:700px;
     height: 350px;
     object-fit: cover;
   }
-  .statistiques > ul{line-height: 2.3em;}
-  li{font-size: 1.5em;}
+  .perso-statistiques > ul{line-height: 2.3em;}
+  .perso-li{font-size: 1.5em;}
 }
 @media (max-width: 1400px) {/*Format Télephone*/
-  .bloc-titre{width: 50%;}
-  .persoHorizontal{flex-direction: column;}
-  iframe{
+  /*---------------------------------------------------Perso Télephone-----------------------------------------------------------*/
+  .perso-bloc-titre{width: 50%;}
+  .perso-horizontal{flex-direction: column;}
+  .perso-iframe{
     width: 90%;
     height: 300px;
     margin: 0 auto;
   }
-  .clubs{width:100%}
-  .bordered-images{margin: 1em auto;}
-  .club > img{width : 50px}
-  .maradona-img{width: 250px;}
-  .palmares > section > figure > img{width: 250px;}
-  .cinema > section > figure > img{height: 200px;}
-  .slider > img{
+  .perso-clubs{width:100%}
+  .perso-bordered-images{margin: 1em auto;}
+  .perso-club > .perso-img{width : 50px}
+  .perso-maradona-img{width: 250px;}
+  .perso-palmares > section > .perso-figure > .perso-img{width: 250px;}
+  .perso-cinema > section > .perso-figure > .perso-img{height: 200px;}
+  .perso-slider > .perso-img{
     width: 300px;
     height: 200px;
     object-fit: cover;
   }
-  .statistiques > ul{
+  .perso-statistiques > ul{
     line-height: 1.5em;
     padding: 0 0 0 1em;
     margin: 0;
   }
-  li{font-size: 1em;}
+  .perso-li{font-size: 1em;}
   html {font-size: 80%; /* 20% plus petit */}
 }
 
-/*---------------------------------------------------Textes-----------------------------------------------------------*/
-.bloc-titre{
+/*---------------------------------------------------Perso Textes-----------------------------------------------------------*/
+.perso-bloc-titre{
   padding: 2px 50px 30px 50px;
   background-color: #FFD166;
   text-align: right;
@@ -69,7 +72,7 @@
   margin: 0 auto;
 
 }
-.sous-titre{
+.perso-sous-titre{
   color: #fff;
   background-color: #333;
   border-radius: 5px;
@@ -102,10 +105,10 @@ p, blockquote{
   font-family: Montserrat;
   font-size: 1.2em;
 }
-li{
+.perso-li{
   font-family: Montserrat;
 }
-li li{
+.perso-li .perso-li{
   font-size: 1em; /*pour éviter que les listes dans les listes héritent 2 fois du font-size*/
 }
 
@@ -113,7 +116,7 @@ blockquote{
   text-align: center;
 }
 
-.zone-de-texte{
+.perso-zone-de-texte{
     background-color: #ffd166;
     padding:1.5em ;
     margin: 1em;
@@ -122,19 +125,19 @@ blockquote{
 }
 
 
-/*---------------------------------------------------Images-----------------------------------------------------------*/
+/*---------------------------------------------------Perso Images-----------------------------------------------------------*/
 
-.bordered-images, iframe, figure > img, .slider > img{
+.perso-bordered-images, iframe, .perso-figure > .perso-img, .perso-slider > .perso-img{
   border: 6px solid #74ACDF; 
   border-radius: 13px;
 }
 
-.bordered-images{
+.perso-bordered-images{
     height: fit-content;
     flex-shrink: 0;
 }
 
-figure{
+.perso-figure{
   margin: 0 1em 1em 1em;
   display: flex;
   flex-direction: column;
@@ -142,40 +145,40 @@ figure{
   justify-content: space-between;
 }
 
-figcaption{
+.perso-figcaption{
   margin: 0.5em 0 1em;
   font-size: 1.5em;
   font-family: Capriola;
   text-align: center;
 }
 
-.palmares > section > figure > img{
+.perso-palmares > section > .perso-figure > .perso-img{
   height : 250px;
   object-fit: cover;
 }
 
-.slider > img{
+.perso-slider > .perso-img{
   object-fit: cover;
 }
 
-/*---------------------------------------------------Positionnement-----------------------------------------------------------*/
+/*---------------------------------------------------Perso Positionnement-----------------------------------------------------------*/
 
 
-.persoHorizontal{
+.perso-horizontal{
     display: flex;
     position: relative;
 }
 
-.persoVertical{
+.perso-vertical{
     display: flex;
     flex-direction: column;
 }
 
-.biographie{
+.perso-biographie{
     width: 50%;
 }
 
-.clubs{
+.perso-clubs{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -183,7 +186,7 @@ figcaption{
     margin-top: 1em
 }
 
-.club{
+.perso-club{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,21 +197,21 @@ figcaption{
     margin : 0.2em 0em;
     transition: 0.2s;
 }
-.club:hover {
+.perso-club:hover {
     transform: scale(1.05);
 }
 
-.bloc-clubs-statistiques{
+.perso-bloc-clubs-statistiques{
   padding: 1em;
 }
-.bloc-multimedia{
+.perso-bloc-multimedia{
   align-items: center;
   justify-content: space-around;
 }
-.bloc-images{
+.perso-bloc-images{
   margin-top: 1em;
 }
 
-.statistiques{
+.perso-statistiques{
   width: fit-content;
 }
