@@ -22,6 +22,7 @@ main h1{
   color: #FFFFFF;
   text-align: center;
   font-size: 2.5em;
+  width: fit-content;
   padding: 0.25em 0.5em;
   border-radius: 10px;
 }
@@ -261,26 +262,7 @@ main{
 }
 
 
-#ovr{
-    width: 50%;
-    margin: auto;
-}
 
-.artDimensions{
-    width: 50%;
-}
-
-.artDimensions h1{
-    width: 50%;
-}
-
-.artLieux{
-    width: 50%;
-}
-
-.artLieux h1{
-    width: 30%;
-}
 
 /* ============= */
 /* ART SECTION 1 */
@@ -291,7 +273,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 10em;
     grid-row-gap: 0em;
     margin-bottom: 2em;
     justify-items: center;
@@ -305,26 +287,27 @@ main{
     grid-row-gap: 1em;
     align-self: end;
     align-items: flex-end;
-    justify-items: end;
+    justify-self: center;
 
 }
 
 .topPart2{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+   justify-self: left;
 
+}
+
+.topPart2 .bloc-titre{
+    align-self: flex-start;
 }
 
 .part2 .bloc-titre{
     width: auto;
-    justify-self: end;
+    justify-self: center;
 }
 
 .SliderArt{
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .ArtSection1 > img{
@@ -336,8 +319,8 @@ main{
 
 .SliderArt img{
    
-   height: 40%;
-   width: 71%;
+   height: 30%;
+   width: 90%;
    border: solid #74ACDF 0.5em;
    border-radius: 10px;
 }
@@ -381,7 +364,8 @@ main{
 
 /* PETIT TITLE */
 #ovr{
-    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* PETIT TITLE */
 
@@ -401,14 +385,14 @@ main{
 }
 
 #ovr1{
-    width: 65%;
+    width: 75%;
     border: solid #74ACDF 10px;
     border-radius: 10px;
     justify-self: right;
 }
 
 #ovr2{
-    width: 50%;
+    width: 60%;
     border: solid #74ACDF 10px;
     border-radius: 10px;
     justify-self: left;
@@ -419,7 +403,7 @@ main{
 
 .ArtSection2 .grid2{
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr 1.6fr;
     grid-template-rows: 1fr;
     grid-column-gap:  8.5%;
     grid-row-gap: 0px;
@@ -428,7 +412,7 @@ main{
 }
 
 #ovr3{
-    width: 50%;
+    width: 65%;
     border: solid #74ACDF 10px;
     border-radius: 10px;
     justify-self: right;
@@ -436,7 +420,7 @@ main{
 }
 
 #ovr4{
-    width: 65%;
+    width: 75%;
     border: solid #74ACDF 10px;
     border-radius: 10px;
     justify-self: left;
@@ -463,6 +447,51 @@ main{
 .ArtSection3 .bloc-titre h1{
     width: fit-content;
 }
+
+
+/* ============= */
+/* ART SECTION 4 */
+/* ============= */
+
+.ArtSection4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap:  8.5%;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.artDimensions{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    justify-items: center;
+    
+}
+
+
+.artDimensions img{
+    width: 100%;
+    align-self: center;
+    border: solid #74ACDF 10px;
+    border-radius: 10px;
+}
+
+
+.artLieux{
+    display: grid;
+    justify-items: center;
+}
+
+.artLieux iframe{
+    border: 10px solid #74ACDF ;
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -507,3 +536,5 @@ main{
 .ArtSection6 .bloc-titre h1{
     width: fit-content;
 }
+
+
