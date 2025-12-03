@@ -250,22 +250,21 @@ button a{
     background-color: #ffd166;
     padding: 0.1em 1em 1em 1em;
     border-radius: 13px;
-    text-align: center;
     letter-spacing: 2px;
-
   }
 
 .NavPerito h2{
     background-color: #74ACDF;
-    padding: 12px 7.7em 12px 7.9em;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: white;
     border-radius: 13px;
     font-size: 2em;
+    text-align: center;
   }
 
 .NavPerito ul{
-    margin: 0 0 0 25%;
-    width: 20em;
+    padding: 0 10em 0 10em;
     list-style: none;
   }
 
@@ -274,14 +273,16 @@ button a{
     font-size: 1.2em;
     font-family: Montserrat;
     text-decoration: none;
+    margin: 13px 0 13px 0;
+    text-align: center;
   }
-
+  
 .NavPerito ul li{
     border-radius: 13px;
-    padding: 7px 0 7px 0;
     background-color: #74ACDF;
-    margin: 30px 30px 0 0;
+    margin: 30px auto auto auto;
     transition: 1s;
+    text-align: center;
   }
 
 .NavPerito ul li:hover{
@@ -306,20 +307,22 @@ button a{
     text-align: center;
   }
 
-.pic1{
-    padding: 1em 0 0 0;
-}
 
-.pic1 img{
-    width: 13em;
+
+.pic1{
+    width: 15em;
     border-radius: 13px;
     border: #74ACDF solid 7px;
+    flex-shrink: 5;
   }
   
 .UnderHeader{
-    display: flex;
-    flex: nowrap;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-column-gap: 1%;
+  margin: 2em;
   }
+
 
 .trekking{
     display: flex;
@@ -375,4 +378,19 @@ button a{
   width: 110em;
   margin: -70px 1em 2em 2em;
   border-radius: 13px;
+}
+
+/* PARTIE RESPONSIVE */
+
+@media(max-width :1100px){
+.UnderHeader{
+    display:block;
+    margin: 2em;
+  }
+.NavPerito{
+  margin-top: 2em ;
+}
+.NavPerito img{
+  align-self: center;
+  }
 }
