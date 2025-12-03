@@ -4,28 +4,28 @@ body {
 }
 
 @font-face {
-font-family: Capriola;
-src: url(./static/polices/Capriola-Regular.ttf);
+  font-family: Capriola;
+  src: url(./static/polices/Capriola-Regular.ttf);
 }
 @font-face {
-font-family: Montserrat;
-src: url(./static/polices/montserrat/Montserrat-Light.otf);
+  font-family: Montserrat;
+  src: url(./static/polices/montserrat/Montserrat-Light.otf);
 }
 
 
 
 h1, h2, h3{
-font-family: Capriola;
+  font-family: Capriola;
 }
 h1{
-text-align: center;
-font-size: 2.5em;
+  text-align: center;
+  font-size: 2.5em;
 }
 h2{
-font-size: 2em;
+  font-size: 2em;
 }
 h3{
-font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .bloc-titre{
@@ -232,6 +232,7 @@ button a{
   }
 
 }
+
 /* Partie Perito Moreno */
 
 .perito{
@@ -273,7 +274,6 @@ button a{
     font-size: 1.2em;
     font-family: Montserrat;
     text-decoration: none;
-    margin: 13px 0 13px 0;
     text-align: center;
   }
   
@@ -281,6 +281,7 @@ button a{
     border-radius: 13px;
     background-color: #74ACDF;
     margin: 30px auto auto auto;
+    padding: 5px 0 5px 0;
     transition: 1s;
     text-align: center;
   }
@@ -331,20 +332,27 @@ button a{
 
 .trekking img{
     width: 30em;
-    margin: 0.5em 0 0 0;
+    margin: 0.5em 2em 0 0;
     border-radius: 13px;
     border: #74ACDF solid 7px;
 }
 
 .bigimage img{
-  width: 100%;
+  width: 98%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.bigimage-velage img{
+  width: 98%;
   border-radius: 13px;
   border: #74ACDF solid 7px;
   align-content: center;
 }
 
 .velage img{
-  width: 35em;
+  width: 90%;
   border-radius: 13px;
   border: #74ACDF solid 7px;
 }
@@ -356,41 +364,88 @@ button a{
 }
 
 .velage div{
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .velage figure{
-  margin: -75px 1em 2em 2em;
+  margin: -2em 0 2em 2em;
+  grid-column: 2/2;
 }
-
-.velage{
-  margin: 100em;
+.velage p{
+  grid-column: 1/2;
 }
 
 .localisation div{
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .localisation iframe{
-  height: 20em;
-  width: 110em;
-  margin: -70px 1em 2em 2em;
+  height: 15em;
+  width: 80%;
+  margin: -1em 0 2em 3em;
   border-radius: 13px;
 }
 
 /* PARTIE RESPONSIVE */
 
-@media(max-width :1100px){
-.UnderHeader{
-    display:block;
-    margin: 2em;
-  }
-.NavPerito{
-  margin-top: 2em ;
+@media(max-width :1200px){
+  .perito{
+    margin: 2em 2em 5em 2em;
 }
-.NavPerito img{
-  align-self: center;
+
+.UnderHeader{
+    margin: 2em;
+    display:block;
   }
+
+.NavPerito{
+    margin-top: 2em;
+    display: none;
+}
+
+
+.pic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pic img{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.trekking{
+  display: flex;
+  flex-direction: column;    
+  align-items: center;       
+  text-align: center;
+}
+.trekking img{
+  width: 85%;
+  margin: 0 2em 0 2em;
+}
+
+.velage{
+  display: none;
+}
+.bigimage-velage{
+  display: none;
+}
+.localisation iframe{
+  display: none;
+}
+.localisation div{
+  display: block; 
+  margin: 0 auto 2em auto;
+  text-align: center; 
+}
+.PeritoMain article h2{
+  background-color: #74ACDF;
+  color: white;
+  border-radius: 13px;
+  margin: 0.5em auto;
+  font-size: 2em;
+  text-align: center;
+}
 }
