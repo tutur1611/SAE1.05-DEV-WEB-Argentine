@@ -393,59 +393,61 @@ button a{
 @media(max-width :1200px){
   .perito{
     margin: 2em 2em 5em 2em;
-}
-
-.UnderHeader{
-    margin: 2em;
-    display:block;
   }
 
-.NavPerito{
-    margin-top: 2em;
+  .UnderHeader{
+      margin: 2em;
+      display:block;
+  }
+
+  .NavPerito{
+      margin-top: 2em;
+      display: none;
+  }
+
+
+  .pic{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pic img{
+      grid-row: 1/2;
+      grid-column: 2/3;
+  }
+
+  .trekking{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    text-align: center;
+  }
+  .trekking img{
+    width: 85%;
+    margin: 0 2em 0 2em;
+  }
+
+  .velage{
     display: none;
-}
+  }
+  .bigimage-velage{
+    display: none;
+  }
 
-
-.pic{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.pic img{
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-
-.trekking{
-  display: flex;
-  flex-direction: column;    
-  align-items: center;       
-  text-align: center;
-}
-.trekking img{
-  width: 85%;
-  margin: 0 2em 0 2em;
-}
-
-.velage{
-  display: none;
-}
-.bigimage-velage{
-  display: none;
-}
-.localisation iframe{
-  display: none;
-}
-.localisation div{
-  display: block; 
-  margin: 0 auto 2em auto;
-  text-align: center; 
-}
-.PeritoMain article h2{
-  background-color: #74ACDF;
-  color: white;
-  border-radius: 13px;
-  margin: 0.5em auto;
-  font-size: 2em;
-  text-align: center;
-}
+  .localisation iframe{
+    display: none;
+  }
+  .localisation div{
+    display: block; 
+    margin: 0 auto 2em auto;
+    text-align: center; 
+  }
+  
+  .PeritoMain article h2{
+    background-color: #74ACDF;
+    color: white;
+    border-radius: 13px;
+    margin: 0.5em auto;
+    font-size: 2em;
+    text-align: center;
+  }
 }
