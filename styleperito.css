@@ -308,15 +308,6 @@ button a{
     text-align: center;
   }
 
-
-
-.pic1{
-    width: 15em;
-    border-radius: 13px;
-    border: #74ACDF solid 7px;
-    flex-shrink: 5;
-  }
-  
 .UnderHeader{
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -328,6 +319,13 @@ button a{
 .trekking{
     display: flex;
     flex-wrap: nowrap;
+}
+
+.pic1{
+  width: 15em;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  flex-shrink: 5;
 }
 
 .trekking img{
@@ -470,11 +468,32 @@ button a{
 @media(max-width :600px){
   .perito{
     font-size: 0.9em;
+    border: 1px;
   }
   .PeritoMain article h2{
     font-size: 1.2em;
   }
   .bloc-titre-perito{
     font-size: 1.5em;
+  }
+  
+  .pic1{
+    border: #74ACDF solid 5px;
+  }
+  
+  .trekking img{
+      border: #74ACDF solid 5px;
+  }
+  
+  .bigimage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .bigimage-velage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .velage img{
+    border: #74ACDF solid 5px;
   }
 }
