@@ -406,8 +406,7 @@ button a{
     }
 
   .NavPerito{
-      margin-top: 2em;
-      display: none;
+      margin: 2em 2em 0 2em;
   }
 
 
@@ -431,6 +430,10 @@ button a{
     margin: 0 2em 0 2em;
   }
 
+  .velageNav{
+    display: none;
+  }
+  
   .velage{
     display: none;
   }
@@ -466,13 +469,20 @@ button a{
     }
 }
 @media(max-width :600px){
+
+  .NavPerito{
+    display: none;
+  }
+
   .perito{
     font-size: 0.9em;
     border: 1px;
   }
+
   .PeritoMain article h2{
     font-size: 1.2em;
   }
+
   .bloc-titre-perito{
     font-size: 1.5em;
   }
