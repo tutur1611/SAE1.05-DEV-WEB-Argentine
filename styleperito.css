@@ -414,6 +414,7 @@ button a{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
   }
+  
   .pic img{
       grid-row: 1/2;
       grid-column: 2/3;
@@ -425,6 +426,7 @@ button a{
     align-items: center;       
     text-align: center;
   }
+
   .trekking img{
     width: 85%;
     margin: 0 2em 0 2em;
@@ -433,10 +435,11 @@ button a{
   .velageNav{
     display: none;
   }
-  
+
   .velage{
     display: none;
   }
+
   .bigimage-velage{
     display: none;
   }
@@ -444,6 +447,7 @@ button a{
   .localisation iframe{
     display: none;
   }
+
   .localisation div{
     display: block; 
     margin: 0 auto 2em auto;
