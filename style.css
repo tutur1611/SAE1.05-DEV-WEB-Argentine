@@ -812,7 +812,9 @@ blockquote{
     padding: 0.1em 1em 1em 1em;
     border-radius: 13px;
     letter-spacing: 2px;
-  }
+    justify-content: center;
+}
+
 
 .NavPerito h2{
     background-color: #74ACDF;
@@ -822,6 +824,8 @@ blockquote{
     border-radius: 13px;
     font-size: 2em;
     text-align: center;
+    width: 50%;
+    margin: auto;
   }
 
 .NavPerito ul{
