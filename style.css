@@ -12,6 +12,60 @@ body {
   src: url(./static/polices/montserrat/Montserrat-Light.otf);
 }
 
+/*---------------------------------------------------Responsive-----------------------------------------------------------*/
+
+@media (min-width: 1400px){/*Format Ordinateur*/
+  /*---------------------------------------------------Perso Ordinateur-----------------------------------------------------------*/
+
+  .perso-bloc-titre{width: fit-content;}
+  .perso-horizontal{flex-direction: row;}
+  .perso-iframe{
+    margin : 1em;
+    width: 100%;
+  }
+  .perso-clubs{width:500px;}
+  .perso-bordered-images{margin: 1em;}
+  .perso-club > .perso-img{width : 70px}
+  .perso-maradona-img{width: 500px;}
+  .perso-palmares > section > .perso-figure > .perso-img{width: 400px;}
+  .perso-cinema > section > .perso-figure > .perso-img{height: 350px; }
+  .perso-slider > .perso-img{
+    width:700px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .perso-statistiques > ul{line-height: 2.3em;}
+  .perso-li{font-size: 1.5em;}
+}
+@media (max-width: 1400px) {/*Format Télephone*/
+  /*---------------------------------------------------Perso Télephone-----------------------------------------------------------*/
+  .perso-bloc-titre{width: 50%;}
+  .perso-horizontal{flex-direction: column;}
+  .perso-iframe{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .perso-clubs{width:100%}
+  .perso-bordered-images{margin: 1em auto;}
+  .perso-club > .perso-img{width : 50px}
+  .perso-maradona-img{width: 250px;}
+  .perso-palmares > section > .perso-figure > .perso-img{width: 250px;}
+  .perso-cinema > section > .perso-figure > .perso-img{height: 200px;}
+  .perso-slider > .perso-img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .perso-statistiques > ul{
+    line-height: 1.5em;
+    padding: 0 0 0 1em;
+    margin: 0;
+  }
+  .perso-li{font-size: 1em;}
+  html {font-size: 80%; /* 20% plus petit */}
+}
+
 
 
 h1, h2, h3{
@@ -26,7 +80,6 @@ main h1{
   padding: 0.25em 0.5em;
   border-radius: 10px;
 }
-
 
 
 h2{
@@ -573,4 +626,162 @@ img.displaySlide{
     width: fit-content;
 }
 
+
+
+
+
+/*---------------------------------------------------Perso Textes-----------------------------------------------------------*/
+.perso-bloc-titre{
+  padding: 2px 50px 30px 50px;
+  background-color: #FFD166;
+  text-align: right;
+  border-radius: 13px;
+  position: relative;
+  font-family: Montserrat;
+  margin: 0 auto;
+
+}
+.perso-sous-titre{
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 16pt;
+  text-align: right;
+  position: absolute;
+  padding: 3px 7px;
+  bottom: 10px;
+  right: 10px;
+}
+
+h2{
+    background-color: #74ACDF;
+    padding: 5px 10px;
+    width: fit-content;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+#text-center{
+  margin: 0 auto;
+}
+
+p{
+  margin: 1em 0 0 0;
+}
+p, blockquote{
+  font-family: Montserrat;
+  font-size: 1.2em;
+}
+.perso-li{
+  font-family: Montserrat;
+}
+.perso-li .perso-li{
+  font-size: 1em; /*pour éviter que les listes dans les listes héritent 2 fois du font-size*/
+}
+
+blockquote{
+  text-align: center;
+}
+
+.perso-zone-de-texte{
+    background-color: #ffd166;
+    padding:1.5em ;
+    margin: 1em;
+    border-radius: 13px;
+    height: fit-content;
+}
+
+
+/*---------------------------------------------------Perso Images-----------------------------------------------------------*/
+
+.perso-bordered-images, iframe, .perso-figure > .perso-img, .perso-slider > .perso-img{
+  border: 6px solid #74ACDF; 
+  border-radius: 13px;
+}
+
+.perso-bordered-images{
+    height: fit-content;
+    flex-shrink: 0;
+}
+
+.perso-figure{
+  margin: 0 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perso-figcaption{
+  margin: 0.5em 0 1em;
+  font-size: 1.5em;
+  font-family: Capriola;
+  text-align: center;
+}
+
+.perso-palmares > section > .perso-figure > .perso-img{
+  height : 250px;
+  object-fit: cover;
+}
+
+.perso-slider > .perso-img{
+  object-fit: cover;
+}
+
+/*---------------------------------------------------Perso Positionnement-----------------------------------------------------------*/
+
+
+.perso-horizontal{
+    display: flex;
+    position: relative;
+}
+
+.perso-vertical{
+    display: flex;
+    flex-direction: column;
+}
+
+.perso-biographie{
+    width: 50%;
+}
+
+.perso-clubs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em
+}
+
+.perso-club{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat;
+    text-align: center;
+    width : 33%;
+    margin : 0.2em 0em;
+    transition: 0.2s;
+}
+.perso-club:hover {
+    transform: scale(1.05);
+}
+
+.perso-bloc-clubs-statistiques{
+  padding: 1em;
+}
+.perso-bloc-multimedia{
+  align-items: center;
+  justify-content: space-around;
+}
+.perso-bloc-images{
+  margin-top: 1em;
+}
+
+.perso-statistiques{
+  width: fit-content;
+}
 
