@@ -20,16 +20,16 @@
         <nav>
             <ul>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/home_icon.png" alt="Image pour accueil">Accueil</button>
+                    <button class="buttonHeader"><img src="./static/commun/home_icon.png" alt="Image pour accueil"><p>Accueil</p></button>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages">Personnages</button>
+                    <button class="buttonHeader"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages"><p>Personnages</p></button>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/art_icone.png" alt="Image pour Art">Art</button>
+                    <button class="buttonHeader"><img src="./static/commun/art_icone.png" alt="Image pour Art"><p>Art</p></button>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux">Lieux</button>
+                    <button class="buttonHeader"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux"><p>Lieux</p></p></button>
                 </li>
             </ul>
         </nav>
@@ -70,7 +70,7 @@
                 </div>
                 <div id="hymne">
                     <h3>Hymne national</h3>
-                    <audio controls="controls" src="./static/C21_Accueil/#" ></audio>
+                   <audio controls="controls" src="./static/C21_Accueil/#" ></audio>
                 </div>
                 <div id="monnaie">
                     <h3>Monnaie</h3>
@@ -82,47 +82,51 @@
             </div>
 
         </section>
+        
         <section id="historique">
-            <div class="titre"><h2>Infos clés</h2></div>            <nav>
-            <nav>
+            <div class="titre"><h2>dates clés</h2></div>    
+            <nav id="dates">
                 <ul>
-                    <li><button>1516</button></li>
-                    <li><button>1810</button></li>
-                    <li><button>1816</button></li>
-                    <li><button>1880</button></li>
-                    <li><button>1946</button></li>
-                    <li><button>1983</button></li>
-                    <li><button>2022</button></li>
+                    <li><button class="btnHisto">1516</button></li>
+                    <li><button class="btnHisto">1810</button></li>
+                    <li><button class="btnHisto">1816</button></li>
+                    <li><button class="btnHisto">1880</button></li>
+                    <li><button class="btnHisto">1946</button></li>
+                    <li><button class="btnHisto">1983</button></li>
+                    <li><button class="btnHisto">2022</button></li>
                 </ul>
             </nav>
-            <nav>
-                <ul>
-                    <li>|</li>
-                    <li>|</li>
-                    <li>|</li>
-                    <li>|</li>
-                    <li>|</li>
-                    <li>|</li>
-                    <li>|</li>
+            <nav id="liaisons">
+                <ul >
+                    <li id="liaison1">|</li>
+                    <li id="liaison2">|</li>
+                    <li id="liaison3">|</li>
+                    <li id="liaison4">|</li>
+                    <li id="liaison5">|</li>
+                    <li id="liaison6">|</li>
+                    <li id="liaison7">|</li>
                 </ul>
             </nav>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, assumenda! Ex veniam earum totam reiciendis nulla numquam minima unde rem expedita similique, aperiam id reprehenderit accusantium accusamus blanditiis officiis culpa.</p>
         </section>  
         
-        <section>
-            <h2>Découvrez également</h2>
+        <section id="decouverte">
+            <div class="titre"><h2>Découvrez également</h2></div>
             <div>
                 <article>
                     <h3>Art</h3>
                     <img src="./static/C21_Œuvre/San-diego-del-barrio-de-la-boca.jpg" alt="#">
+                    <button>Découvrir</button>
                 </article>
                 <article>
                     <h3>Lieux</h3>
-                    <img src="./static/C21_lieux/" alt="#">
+                    <img src="./static/C21_lieux/velage1.jpeg" alt="#">
+                    <button>Découvrir</button>
                 </article>
                 <article>
                     <h3>Personnalités</h3>
-                    <img src="./static/C21_Personnage/maradona.jpg" alt="#">
+                    <img src="./static/C21_Personnage/palmares/maradona-coupe-monde.jpg" alt="#">
+                    <button>Découvrir</button>
                 </article>
             </div>
         </section>
