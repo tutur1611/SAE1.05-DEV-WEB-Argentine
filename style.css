@@ -1,15 +1,15 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-  font-family: Capriola;
-  src: url(./static/polices/Capriola-Regular.ttf);
+font-family: Capriola;
+src: url(./static/polices/Capriola-Regular.ttf);
 }
 @font-face {
-  font-family: Montserrat;
-  src: url(./static/polices/montserrat/Montserrat-Light.otf);
+font-family: Montserrat;
+src: url(./static/polices/montserrat/Montserrat-Light.otf);
 }
 
 /*---------------------------------------------------Responsive-----------------------------------------------------------*/
@@ -69,8 +69,13 @@ body {
 
 
 h1, h2, h3{
-  font-family: Capriola;
+font-family: Capriola;
 }
+h1{
+text-align: center;
+font-size: 2.5em;
+}
+
 main h1{
   background-color: #74ACDF;
   color: #FFFFFF;
@@ -83,21 +88,22 @@ main h1{
 
 
 h2{
-  font-size: 2em;
+font-size: 2em;
 }
 h3{
-  font-size: 1.5em;
+font-size: 1.5em;
 }
 
 .bloc-titre{
-  padding: 2px 50px 30px 50px;
-  background-color: #FFD166;
-  text-align: right;
-  width: 25%;
-  height: auto;
-  border-radius: 13px;
-  margin: 0 auto;
-  font-family: Montserrat;
+height: auto;
+padding: 2px 50px 30px 50px;
+background-color: #FFD166;
+text-align: right;
+width: 25%;
+border-radius: 13px;
+margin: 0 auto;
+position: relative;
+font-family: Montserrat;
 
 }
 .sous-titre{
@@ -113,39 +119,39 @@ h3{
 }
 
 p{
-  font-family: Montserrat;
+font-family: Montserrat;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }
 
 header div {
-    background-color: #ffd166;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffd166;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 header div h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 header nav {
-    width: 60%;
-    align-self: center;
-    align-items: center;
+  width: 60%;
+  align-self: center;
+  align-items: center;
 }
 
 header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
 .buttonHeader {
@@ -164,42 +170,42 @@ header nav ul{
 }
 
 .buttonHeader:hover {
-    animation: ombre 0.6s ease forwards;
+  animation: ombre 0.6s ease forwards;
 }
 
 
 header div img:hover {
-    animation: rotation 0.6s ease;
+  animation: rotation 0.6s ease;
 }
 
 .buttonHeader img {
-    height: 2em;
-    margin-right: 10px;
+  height: 2em;
+  margin-right: 10px;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 10em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 10em;
 }
 
 .div1 {
-    grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .div1 img {
-    height: 10em;
+  height: 10em;
 }
-    
+  
 .div2 { 
-    grid-area: 1 / 2 / 2 / 5; 
+  grid-area: 1 / 2 / 2 / 5; 
 
 }
 
 .div3 { 
-    grid-area: 1 / 5 / 2 / 6; 
+  grid-area: 1 / 5 / 2 / 6; 
 
 }
 
@@ -218,29 +224,30 @@ grid-row-gap: 0px;
 }
 
 .footerDiv1 {
-     grid-area: 1 / 1 / 2 / 3;
-     display: flex;
-     align-items: flex-end;
-     padding: 1em;
+   grid-area: 1 / 1 / 2 / 3;
+   display: flex;
+   align-items: flex-end;
+   padding: 1em;
 }
 .footerDiv2 {
-     grid-area: 1 / 3 / 2 / 4;
-     display: flex;
-     align-items: center;
-     justify-content: right;
-     gap: 3em;
-     margin-right: 4em;
+   grid-area: 1 / 3 / 2 / 4;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   gap: 3em;
+   margin-right: 4em;
 }
 
 .footerDiv2 img{
-     width: 10em;
-     order: 2;
-     transition: all 1s ease-in-out;
+   width: 10em;
+   order: 2;
+   transition: all 1s ease-in-out;
 }
 
 .footerDiv2 img:hover{
-    transform: rotateZ(360deg) scale(0.5);
-    transition: all 1s ease-in-out;
+  transform: rotateZ(360deg) scale(0.5);
+  transition: all 1s ease-in-out;
+
 }
 
 button{
@@ -257,7 +264,7 @@ button{
 }
 
 button:hover{
-    animation: ombre 0.6s ease forwards;
+  animation: ombre 0.6s ease forwards;
 }
 
 button a{
@@ -522,12 +529,12 @@ button a{
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 
 }
 
@@ -1005,5 +1012,289 @@ blockquote{
 
 .perso-statistiques{
   width: fit-content;
+}
+
+/* ============================================= */
+/* PARTIE PERITO MORENO (fusionné depuis styleperito.css) */
+/* ============================================= */
+
+.perito{
+    margin: 2em 10em 5em 10em;
+}
+
+.bloc-titre-perito{
+  padding: 30px 50px 30px 50px;
+  background-color: #FFD166;
+  border-radius: 13px;
+  margin: 0 1em 1em 1em;
+  font-family: Montserrat;
+  }
+
+.NavPerito{
+    background-color: #ffd166;
+    padding: 0.1em 1em 1em 1em;
+    border-radius: 13px;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+
+
+.NavPerito h2{
+    background-color: #74ACDF;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+.NavPerito ul{
+    padding: 0 10em 0 10em;
+    list-style: none;
+  }
+
+.NavPerito ul li a{
+    color: white;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+.NavPerito ul li{
+    border-radius: 13px;
+    background-color: #74ACDF;
+    margin: 30px auto auto auto;
+    padding: 5px 0 5px 0;
+    transition: 1s;
+    text-align: center;
+  }
+
+.NavPerito ul li:hover{
+    transform: scale(1.20);
+    background-color: #7cb7f3;
+  }
+
+.PeritoMain article{
+    background-color: #ffd166;
+    padding: 0.5em 2em 0.1em 2em;
+    margin: 2em;
+    border-radius: 13px;
+  }
+
+.PeritoMain article h2{
+    background-color: #74ACDF;
+    padding: 5px 7px 5px 7px;
+    width: 10em;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+.UnderHeader{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-column-gap: 1%;
+  margin: 2em;
+  }
+
+.trekking{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pic1{
+  width: 15em;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  flex-shrink: 5;
+}
+
+.trekking img{
+    width: 30em;
+    margin: 0.5em 2em 0 0;
+    border-radius: 13px;
+    border: #74ACDF solid 7px;
+}
+
+.bigimage img{
+  width: 98%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.bigimage-velage img{
+  width: 98%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.velage img{
+  width: 90%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+}
+
+.velage figcaption{
+  font-family: Montserrat;
+  float: right;
+  font-size: 0.7em;
+}
+
+.velage div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.velage figure{
+  margin: -2em 0 2em 2em;
+  grid-column: 2/2;
+}
+.velage p{
+  grid-column: 1/2;
+}
+
+.localisation div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.localisation iframe{
+  height: 15em;
+  width: 80%;
+  margin: -1em 0 2em 3em;
+  border-radius: 13px;
+}
+
+/* PARTIE RESPONSIVE PERITO */
+
+@media(max-width :1200px){
+  .perito{
+    margin: 2em 0em 5em 0em;
+    font-size: 1em;
+  }
+
+  .UnderHeader{
+    margin: 2em 0 2em 0;
+    display:block;
+  }
+
+  .bloc-titre-perito{
+    padding: 0;
+    font-size: 10%;
+    margin: 0 0em 1em 0em;
+    }
+
+  .NavPerito{
+      margin: 2em 2em 0 2em;
+  }
+
+  .pic{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .pic img{
+      grid-row: 1/2;
+      grid-column: 2/3;
+  }
+
+  .trekking{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    text-align: center;
+  }
+
+  .trekking img{
+    width: 85%;
+    margin: 0 2em 0 2em;
+  }
+
+  .velageNav{
+    display: none;
+  }
+
+  .velage{
+    display: none;
+  }
+
+  .bigimage-velage{
+    display: none;
+  }
+
+  .localisation iframe{
+    display: none;
+  }
+
+  .localisation div{
+    display: block; 
+    margin: 0 auto 2em auto;
+    text-align: center; 
+  }
+
+  .PeritoMain article h2{
+    background-color: #74ACDF;
+    color: white;
+    border-radius: 13px;
+    margin: 0.5em auto;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .bloc-titre-perito{
+    padding: 30px 50px 30px 50px;
+    font-size: 2em;
+    background-color: #FFD166;
+    border-radius: 13px;
+    margin: 0 1em 1em 1em;
+    font-family: Montserrat;
+    }
+}
+
+@media(max-width :600px){
+
+  .NavPerito{
+    display: none;
+  }
+
+  .perito{
+    font-size: 0.9em;
+    border: 1px;
+  }
+
+  .PeritoMain article h2{
+    font-size: 1.2em;
+  }
+
+  .bloc-titre-perito{
+    font-size: 1.5em;
+  }
+  
+  .pic1{
+    border: #74ACDF solid 5px;
+  }
+  
+  .trekking img{
+      border: #74ACDF solid 5px;
+  }
+  
+  .bigimage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .bigimage-velage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .velage img{
+    border: #74ACDF solid 5px;
+  }
 }
 
