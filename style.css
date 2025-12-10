@@ -304,6 +304,7 @@ button a{
     width: fit-content;
     width: 35%;
     margin: 1em;
+    padding: 0.5em;
 }
 
 .titre h2 {
@@ -446,15 +447,7 @@ button a{
     width: 7em;
 }
 
-#dates ul li:nth-child(odd) .btnHisto {
-    background: #74ACDF;
-}
-#dates ul li:nth-child(even) .btnHisto {
-
-    background: #FFD166;
-}
-
-#dates ul li:nth-child(odd) .btnHisto:hover {
+.btnHisto:hover {
     animation: btnHisto 0.6s ease forwards;
 }
 
