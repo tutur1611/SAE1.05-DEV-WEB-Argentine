@@ -1064,7 +1064,7 @@ blockquote{
 
 .NavPerito{
     background-color: #ffd166;
-    padding: 0.1em 1em 1em 1em;
+    align-self: center;
     border-radius: 13px;
     letter-spacing: 2px;
     justify-content: center;
@@ -1079,8 +1079,10 @@ blockquote{
     border-radius: 13px;
     font-size: 2em;
     text-align: center;
+    align-self: center;
     width: 50%;
     margin: auto;
+    margin-top: 0.5em;
   }
 
 .NavPerito ul{
@@ -1112,7 +1114,7 @@ blockquote{
 
 .PeritoMain article{
     background-color: #ffd166;
-    padding: 0.5em 2em 0.1em 2em;
+    padding: 1em 1em 1em 1em;
     margin: 2em;
     border-radius: 13px;
   }
