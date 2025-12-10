@@ -154,19 +154,31 @@ header nav ul{
   list-style-type: none;
 }
 
+header nav ul li a {
+  text-decoration: none;
+}
+
 .buttonHeader {
     background-color: #74acdf;
     height: 2.5em;
     display: flex;
+    text-align: center;
     align-items: center;
     text-align: center;
     justify-content: center;
     border-radius: 13px;
     width: 10em;
+    height: 2.5em;
     font-size: 20px;
     color: white;
     text-decoration: none;
     animation: ombreRetour 0.6s ease forwards;
+}
+
+.buttonHeader p {
+  border: solid black;
+  text-align: center;
+  align-self: center;
 }
 
 .buttonHeader:hover {
@@ -538,18 +550,15 @@ button a{
 
 }
 
-main{
-    margin: auto;
-    width: 80%;
-}
-
-
-
 
 /* ============= */
 /* ART SECTION 1 */
 /* ============= */
 
+.artMain {
+  width: 80%;
+  margin: auto;
+}
 
 .ArtSection1{
     display: grid;
