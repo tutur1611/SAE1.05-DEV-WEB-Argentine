@@ -564,9 +564,14 @@ img.displaySlide{
 
 .artDimensions img{
     width: 100%;
+    height: auto;
     align-self: center;
     border: solid #74ACDF 10px;
     border-radius: 10px;
+}
+
+.artDimensions h1{
+    height: fit-content;
 }
 
 
