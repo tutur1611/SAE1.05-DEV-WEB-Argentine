@@ -87,13 +87,13 @@
             <div class="titre"><h2>dates clés</h2></div>    
             <nav id="dates">
                 <ul>
-                    <li><button class="btnHisto">1516</button></li>
-                    <li><button class="btnHisto">1810</button></li>
-                    <li><button class="btnHisto">1816</button></li>
-                    <li><button class="btnHisto">1880</button></li>
-                    <li><button class="btnHisto">1946</button></li>
-                    <li><button class="btnHisto">1983</button></li>
-                    <li><button class="btnHisto">2022</button></li>
+                    <li><button class="btnHisto" data-year="1516">1516</button></li>
+                    <li><button class="btnHisto" data-year="1810">1810</button></li>
+                    <li><button class="btnHisto" data-year="1816">1816</button></li>
+                    <li><button class="btnHisto" data-year="1880">1880</button></li>
+                    <li><button class="btnHisto" data-year="1946">1946</button></li>
+                    <li><button class="btnHisto" data-year="1983">1983</button></li>
+                    <li><button class="btnHisto" data-year="2022">2022</button></li>
                 </ul>
             </nav>
             <nav id="liaisons">
@@ -107,7 +107,7 @@
                     <li id="liaison7">|</li>
                 </ul>
             </nav>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, assumenda! Ex veniam earum totam reiciendis nulla numquam minima unde rem expedita similique, aperiam id reprehenderit accusantium accusamus blanditiis officiis culpa.</p>
+            <p id="texteHistorique">Cliquez sur une date pour découvrir un événement clé de l'histoire argentine.</p>
         </section>  
         
         <section id="decouverte">
@@ -157,6 +157,40 @@
 
     </footer>
 
+    <script>
+        // Textes historiques pour chaque date
+        const historiqueTextes = {
+            "1516": "Première exploration européenne : le navigateur espagnol Juan Díaz de Solís découvre le Río de la Plata et explore les côtes argentines.",
+            "1810": "Révolution de Mai : le 25 mai, Buenos Aires déclare son autonomie face à l'Espagne, marquant le début du processus d'indépendance.",
+            "1816": "Déclaration d'indépendance : le 9 juillet, les Provinces-Unies du Río de la Plata proclament leur indépendance à San Miguel de Tucumán.",
+            "1880": "Fédéralisation de Buenos Aires : Buenos Aires devient officiellement la capitale fédérale de l'Argentine, mettant fin aux tensions entre fédéralistes et unitaires.",
+            "1946": "Élection de Juan Perón : début de l'ère péroniste qui transforme profondément la société argentine avec des réformes sociales et économiques majeures.",
+            "1983": "Retour à la démocratie : après 7 ans de dictature militaire, Raúl Alfonsín est élu président, marquant la fin de la dernière junte militaire.",
+            "2022": "Victoire en Coupe du Monde : l'Argentine remporte sa troisième Coupe du Monde de football au Qatar, menée par Lionel Messi."
+        };
+
+        // Fonction pour changer le texte
+        function changerTexteHistorique(annee) {
+            const paragraphe = document.getElementById('texteHistorique');
+            paragraphe.textContent = historiqueTextes[annee];
+            
+            // Retirer la classe active de tous les boutons
+            document.querySelectorAll('.btnHisto').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Ajouter la classe active au bouton cliqué
+            event.target.classList.add('active');
+        }
+
+        // Ajouter les écouteurs d'événements aux boutons
+        document.querySelectorAll('.btnHisto').forEach(button => {
+            button.addEventListener('click', function() {
+                const annee = this.getAttribute('data-year');
+                changerTexteHistorique(annee);
+            });
+        });
+    </script>
 
 </body>
 
