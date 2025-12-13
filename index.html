@@ -20,22 +20,116 @@
         <nav>
             <ul>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/home_icon.png" alt="Image pour accueil">Accueil</button>
+                    <a href="./index.html"><button class="buttonHeader"><img src="./static/commun/home_icon.png" alt="Image pour accueil">Accueil</button></a>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages">Personnages</button>
+                    <a href="./persoNav.html"><button class="buttonHeader"><img src="./static/commun/personnage_icone.png" alt="Image pour Personnages">Personnages</button></a>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/art_icone.png" alt="Image pour Art">Art</button>
+                    <a href="./ArtNav.html"><button class="buttonHeader"><img src="./static/commun/art_icone.png" alt="Image pour Art">Art</button></a>
                 </li>
                 <li>
-                    <button class="buttonHeader"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux">Lieux</button>
+                    <a href="./lieuxNav.html"><button class="buttonHeader"><img src="./static/commun/pin_icon.png"  alt="Image pour Lieux">Lieux</button></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="acMain">
+    <main id="acMain">
+        <p id="description">L’Argentine est un vaste pays d’Amérique du Sud connu pour la diversité de ses paysages, sa culture vibrante et sa passion du football. De la cordillère des Andes aux plages atlantiques, en passant par les plaines fertiles de la pampa et les glaciers de Patagonie, elle offre une richesse naturelle et culturelle unique. Sa capitale, Buenos Aires, est célèbre pour son ambiance cosmopolite, sa musique du tango et sa gastronomie raffinée.</p>
+        <section id="geographie">
+            <article>
+                <p>L’Argentine se situe dans l’hémisphère sud et occidental, entre le 22° et le 55° parallèle sud.</p>
+                <ul>
+                    <li>Frontières : Chili (ouest), Bolivie et Paraguay (nord), Brésil et Uruguay (nord-est), Océan Atlantique (est).</li>
+                    <li>Superficie : environ 2,78 millions de km², ce qui en fait le 2ᵉ plus grand pays d’Amérique du Sud.</li>
+                    <li>La capitale est Buenos Aires et les grandes villes sont Córdoba, Rosario et Mendoza.</li>
+                </ul>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31176381.201718647!2d-84.81901423956239!3d-36.47382157108401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentine!5e1!3m2!1sfr!2sfr!4v1764170497158!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>  
+        
+        <section id="infosCles">
+            <div class="titre"><h2>Infos clés</h2></div>
+            <div class="accueilParent">
+                <div class="elem1" id="devise">
+                    <h3>Devise</h3> 
+                    <p>En unión y libertad</p>
+                </div>
+                <div class="elem1" id="population">
+                    <h3>Population</h3>
+                    <p>~46 millions d'habitants</p>
+                </div>
+                <div class="elem1" id="densite">
+                    <h3>Densité</h3>
+                    <p>~16 Hab/Km²</p>
+                </div>
+                <div id="drapeau">
+                    <h3>Drapeau</h3>
+                    <img src="./static/commun/logoFlag.png" alt="Logo du drapeau argentin" title="Drapeau argentin">
+                </div>
+                <div id="hymne">
+                    <h3>Hymne national</h3>
+                   <audio controls="controls" src="./static/C21_Accueil/#" ></audio>
+                </div>
+                <div id="monnaie">
+                    <h3>Monnaie</h3>
+                    <figure>
+                        <img src="./static/C21_Accueil/pesso.jpg" alt="Billet de 10 pessos argentin" title="Pessos argentin">
+                        <figcaption>Billet de 10 pessos argentin</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="historique">
+            <div class="titre"><h2>dates clés</h2></div>    
+            <nav id="dates">
+                <ul>
+                    <li><button class="btnHisto">1516</button></li>
+                    <li><button class="btnHisto">1810</button></li>
+                    <li><button class="btnHisto">1816</button></li>
+                    <li><button class="btnHisto">1880</button></li>
+                    <li><button class="btnHisto">1946</button></li>
+                    <li><button class="btnHisto">1983</button></li>
+                    <li><button class="btnHisto">2022</button></li>
+                </ul>
+            </nav>
+            <nav id="liaisons">
+                <ul >
+                    <li id="liaison1">|</li>
+                    <li id="liaison2">|</li>
+                    <li id="liaison3">|</li>
+                    <li id="liaison4">|</li>
+                    <li id="liaison5">|</li>
+                    <li id="liaison6">|</li>
+                    <li id="liaison7">|</li>
+                </ul>
+            </nav>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, assumenda! Ex veniam earum totam reiciendis nulla numquam minima unde rem expedita similique, aperiam id reprehenderit accusantium accusamus blanditiis officiis culpa.</p>
+        </section>  
+        
+        <section id="decouverte">
+            <div class="titre"><h2>Découvrez également</h2></div>
+            <div>
+                <article>
+                    <div class="dTitre"><h2>Art</h2></div>
+                    <img src="./static/C21_Œuvre/San-diego-del-barrio-de-la-boca.jpg" alt="#">
+                    <button>Découvrir</button>
+                </article>
+                <article>
+                    <div class="dTitre"><h2>Lieux</h2></div>
+                    <img src="./static/C21_lieux/velage1.jpeg" alt="#">
+                    <button>Découvrir</button>
+                </article>
+                <article>
+                    <div class="dTitre"><h2>Personnalités</h2></div>
+                    <img src="./static/C21_Personnage/palmares/maradona-coupe-monde.jpg" alt="#">
+                    <button>Découvrir</button>
+                </article>
+            </div>
+        </section>
 
     </main>
 
