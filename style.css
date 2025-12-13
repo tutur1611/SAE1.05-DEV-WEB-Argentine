@@ -163,6 +163,11 @@ header nav ul{
     animation: ombreRetour 0.6s ease forwards;
 }
 
+.buttonHeader p {
+    margin: 0;
+    padding: 0;
+}
+
 .buttonHeader:hover {
     animation: ombre 0.6s ease forwards;
 }
