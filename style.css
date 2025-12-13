@@ -176,7 +176,6 @@ header nav ul li a {
 }
 
 .buttonHeader p {
-  border: solid black;
   text-align: center;
   align-self: center;
 }
@@ -484,8 +483,25 @@ button a{
     width: 7em;
 }
 
-.btnHisto:hover {
+#dates ul li:nth-child(odd) .btnHisto:not(.active) {
+    background: #74ACDF;
+}
+#dates ul li:nth-child(even) .btnHisto:not(.active) {
+    background: #FFD166;
+}
+
+#dates ul li:nth-child(odd) .btnHisto:hover {
     animation: btnHisto 0.6s ease forwards;
+}
+
+/* Style pour le bouton actif */
+#dates ul li:nth-child(n) .btnHisto.active {
+    background: #FFD166;
+    color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: 3px solid #FFA500;
 }
 
 #decouverte div:nth-child(2) {
