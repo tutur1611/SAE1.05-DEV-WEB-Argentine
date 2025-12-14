@@ -1348,3 +1348,347 @@ blockquote{
   }
 }
 
+/* ============================================= */
+/* PARTIE PERITO MORENO (fusionné depuis styleperito.css) */
+/* ============================================= */
+
+.perito{
+    margin: 2em 10em 5em 10em;
+}
+
+.bloc-titre-perito{
+  padding: 30px 50px 30px 50px;
+  background-color: #FFD166;
+  border-radius: 13px;
+  margin: 0 1em 1em 1em;
+  font-family: Montserrat;
+  }
+
+.NavPerito{
+    background-color: #ffd166;
+    align-self: center;
+    border-radius: 13px;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+
+
+.NavPerito h2{
+    background-color: #74ACDF;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+    align-self: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 0.5em;
+  }
+
+.NavPerito ul{
+    padding: 0 10em 0 10em;
+    list-style: none;
+  }
+
+.NavPerito ul li a{
+    color: white;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+.NavPerito ul li{
+    border-radius: 13px;
+    background-color: #74ACDF;
+    margin: 30px auto auto auto;
+    padding: 5px 0 5px 0;
+    transition: 1s;
+    text-align: center;
+  }
+
+.NavPerito ul li:hover{
+    transform: scale(1.20);
+    background-color: #7cb7f3;
+  }
+
+.PeritoMain article{
+    background-color: #ffd166;
+    padding: 1em 1em 1em 1em;
+    margin: 2em;
+    border-radius: 13px;
+  }
+
+.PeritoMain article h2{
+    background-color: #74ACDF;
+    padding: 5px 7px 5px 7px;
+    width: 10em;
+    color: white;
+    border-radius: 13px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+.UnderHeader{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-column-gap: 1%;
+  margin: 2em;
+  }
+
+.trekking{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pic1{
+  width: 15em;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  flex-shrink: 5;
+}
+
+.trekking img{
+    width: 30em;
+    margin: 0.5em 2em 0 0;
+    border-radius: 13px;
+    border: #74ACDF solid 7px;
+}
+
+.bigimage img{
+  width: 98%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.bigimage-velage img{
+  width: 98%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+  align-content: center;
+}
+
+.velage img{
+  width: 90%;
+  border-radius: 13px;
+  border: #74ACDF solid 7px;
+}
+
+.velage figcaption{
+  font-family: Montserrat;
+  float: right;
+  font-size: 0.7em;
+}
+
+.velage div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.velage figure{
+  margin: -2em 0 2em 2em;
+  grid-column: 2/2;
+}
+.velage p{
+  grid-column: 1/2;
+}
+
+.localisation div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.localisation iframe{
+  height: 15em;
+  width: 80%;
+  margin: -1em 0 2em 3em;
+  border-radius: 13px;
+}
+
+/* PARTIE RESPONSIVE PERITO */
+
+@media(max-width :1200px){
+  .perito{
+    margin: 2em 0em 5em 0em;
+    font-size: 1em;
+  }
+
+  .UnderHeader{
+    margin: 2em 0 2em 0;
+    display:block;
+  }
+
+  .bloc-titre-perito{
+    padding: 0;
+    font-size: 10%;
+    margin: 0 0em 1em 0em;
+    }
+
+  .NavPerito{
+      margin: 2em 2em 0 2em;
+  }
+
+  .pic{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .pic img{
+      grid-row: 1/2;
+      grid-column: 2/3;
+  }
+
+  .trekking{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    text-align: center;
+  }
+
+  .trekking img{
+    width: 85%;
+    margin: 0 2em 0 2em;
+  }
+
+  .velageNav{
+    display: none;
+  }
+
+  .velage{
+    display: none;
+  }
+
+  .bigimage-velage{
+    display: none;
+  }
+
+  .localisation iframe{
+    display: none;
+  }
+
+  .localisation div{
+    display: block; 
+    margin: 0 auto 2em auto;
+    text-align: center; 
+  }
+
+  .PeritoMain article h2{
+    background-color: #74ACDF;
+    color: white;
+    border-radius: 13px;
+    margin: 0.5em auto;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .bloc-titre-perito{
+    padding: 30px 50px 30px 50px;
+    font-size: 2em;
+    background-color: #FFD166;
+    border-radius: 13px;
+    margin: 0 1em 1em 1em;
+    font-family: Montserrat;
+    }
+}
+
+@media(max-width :600px){
+
+  .NavPerito{
+    display: none;
+  }
+
+  .perito{
+    font-size: 0.9em;
+    border: 1px;
+  }
+
+  .PeritoMain article h2{
+    font-size: 1.2em;
+  }
+
+  .bloc-titre-perito{
+    font-size: 1.5em;
+  }
+  
+  .pic1{
+    border: #74ACDF solid 5px;
+  }
+  
+  .trekking img{
+      border: #74ACDF solid 5px;
+  }
+  
+  .bigimage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .bigimage-velage img{
+    border: #74ACDF solid 5px;
+  }
+  
+  .velage img{
+    border: #74ACDF solid 5px;
+  }
+}
+
+
+
+
+
+.carteDecouverte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carteDecouverte article {
+  display: flex;
+  flex-direction: column;
+  border: solid #74ACDF 5px;
+  background-color: #FFD166;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.carteDecouverte article h2 {
+    margin: 0.5em 0;
+}
+
+.carteDecouverte img {
+  width: 100%;
+  height: 180px;
+  margin: 0.5em;
+  border-radius: 13px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carteDecouverte .btnHisto {
+    margin: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .carteDecouverte {
+    justify-content: center;
+    gap: 1em;
+  }
+  .carteDecouverte article {
+    flex: 1 1 240px;
+    max-width: 100%;
+  }
+  .carteDecouverte img {
+    height: 160px;
+  }
+}
