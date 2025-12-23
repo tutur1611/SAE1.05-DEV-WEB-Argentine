@@ -904,6 +904,187 @@ img.displaySlide{
 }
 
 
+/* ============= */
+/* RESPONSIVE    */
+/* ============= */
+
+@media (max-width: 1400px) and (min-width: 769px) {
+
+  .artMain { 
+    width: 90%; 
+  }
+
+
+  .ArtSection1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  .topPart2{
+    width: 50%;
+  }
+
+  .topPart2 .bloc-titre{
+    width: 100%;
+  }
+
+  #ArtImg1 { 
+    width: 100%; 
+  }
+
+ .ArtSection7{
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+ }
+
+ .ArtSection7 .bloc-titre{
+    
+    
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    width:95%;
+ }
+
+ .ArtSection7 img{
+    align-self: center;
+    width: 95%;
+    height: auto;
+    border: solid #74ACDF 10px;
+    border-radius: 10px;
+    justify-self: center;
+    margin-right: 0em;
+    
+ }
+
+  .ArtSection4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-items: center;
+  }
+
+.artDimensions,
+.artLieux {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+}
+
+.artDimensions img,
+.artLieux iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.artLieux iframe{
+  height: 26em;
+}
+  
+  
+  .part2 .bloc-titre { max-height: none; }
+}
+
+
+
+
+/* Mobile (moins de 768px) */
+@media (max-width: 768px) {
+  .artMain { 
+  width: 95%; 
+  }
+
+
+  .ArtSection1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .ArtSection1 .SliderArt{
+    width: 95%;
+  }
+
+
+  #ArtImg1 {
+  display: none;
+  }
+
+ .ArtSection7{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  justify-items: center;
+  align-items: center;
+ }
+
+ .ArtSection7 .bloc-titre{
+    
+    
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+    width:80%;
+ }
+
+ .ArtSection7 img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border: solid #74ACDF 10px;
+    border-radius: 10px;
+    justify-self: center;
+    margin-right: 0em;
+    
+ }
+
+
+
+ .ArtSection4{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+ }
+
+ .artDimensions{
+  width: 90%;
+  justify-items: center;
+ }
+
+ .artLieux{
+  width: 100%;
+ }
+
+ .artLieux iframe{
+  width: 90%;
+ }
+
+
+
+
+
+
+  .part2 { 
+  align-items: flex-start; 
+  }
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
