@@ -118,7 +118,7 @@ font-family: Montserrat;
 
 }
 
-p{
+p, li{
 font-family: Montserrat;
 }
 
@@ -532,6 +532,7 @@ button a{
     margin: 1em;
     border-width: 6px;
     border-radius: 13px;
+    object-fit: cover;
 }
 
 @keyframes btnHisto {
