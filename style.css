@@ -14,7 +14,7 @@ src: url(./static/polices/montserrat/Montserrat-Light.otf);
 
 /*---------------------------------------------------Responsive-----------------------------------------------------------*/
 
-@media (min-width: 1400px){/*Format Ordinateur*/
+@media (min-width: 1200px){/*Format Ordinateur*/
   /*---------------------------------------------------Perso Ordinateur-----------------------------------------------------------*/
 
   .perso-bloc-titre{width: fit-content;}
@@ -36,8 +36,30 @@ src: url(./static/polices/montserrat/Montserrat-Light.otf);
   }
   .perso-statistiques > ul{line-height: 2.3em;}
   .perso-li{font-size: 1.5em;}
+
+
+  /*---------------------------------------------------Header Ordinateur-----------------------------------------------------------*/
+
+  .div1 img {height: 10em;}
+  header div h1 {font-size: 3em;}
+  .buttonHeader {
+    width: 10em;
+    font-size: 20px;
+  }
+  .buttonHeader img {margin-right: 10px;}
+
+  /*---------------------------------------------------Footer Ordinateur-----------------------------------------------------------*/
+  .footerDiv1 {grid-area: 1 / 1 / 2 / 3;}
+
+  .footerDiv2 {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-content: right;
+    margin-right: 4em;
+
+  }
+
 }
-@media (max-width: 1400px) {/*Format Télephone*/
+@media (max-width: 1200px) {/*Format Télephone*/
   /*---------------------------------------------------Perso Télephone-----------------------------------------------------------*/
   .perso-bloc-titre{width: 50%;}
   .perso-horizontal{flex-direction: column;}
@@ -64,6 +86,28 @@ src: url(./static/polices/montserrat/Montserrat-Light.otf);
   }
   .perso-li{font-size: 1em;}
   html {font-size: 80%; /* 20% plus petit */}
+  
+
+  /*---------------------------------------------------Header Télephone-----------------------------------------------------------*/
+
+  .div1 img {height: 4em;}
+  header div h1 {font-size: 2.5em;}
+  .buttonHeader {
+    width: 8em;
+    font-size: 14px;
+  }
+  .buttonHeader img {margin-right: 2px;}
+
+
+  /*---------------------------------------------------Footer Télephone-----------------------------------------------------------*/
+  .footerDiv1 {grid-area: 1 / 1 / 1 / 4;}
+  .footerDiv2 {
+    grid-area: 2 / 1 / 2 / 4;
+    justify-content: center;
+    margin-right: 0em;
+    flex-wrap: wrap;
+
+  }
 }
 
 
@@ -137,12 +181,9 @@ header div {
   align-items: center;
 }
 
-header div h1 {
-  font-size: 3em;
-}
+
 
 header nav {
-  width: 60%;
   align-self: center;
   align-items: center;
 }
@@ -152,6 +193,8 @@ header nav ul{
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
+  padding-left: 0;
+  flex-wrap: wrap;
 }
 
 header nav ul li a {
@@ -160,16 +203,14 @@ header nav ul li a {
 
 .buttonHeader {
     background-color: #74acdf;
-    height: 2.5em;
     display: flex;
     text-align: center;
     align-items: center;
     text-align: center;
     justify-content: center;
     border-radius: 13px;
-    width: 10em;
     height: 2.5em;
-    font-size: 20px;
+    margin: 0.4em;
     color: white;
     text-decoration: none;
     animation: ombreRetour 0.6s ease forwards;
@@ -191,7 +232,6 @@ header div img:hover {
 
 .buttonHeader img {
   height: 2em;
-  margin-right: 10px;
 }
 
 .parent {
@@ -205,20 +245,15 @@ header div img:hover {
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
 }
-
-.div1 img {
-  height: 10em;
-}
-  
 .div2 { 
-  grid-area: 1 / 2 / 2 / 5; 
-
+  grid-area: 1 / 2 / 2 / 5;
 }
-
 .div3 { 
   grid-area: 1 / 5 / 2 / 6; 
 
 }
+
+
 
 footer{
     background-color: #ffd166;
@@ -227,26 +262,22 @@ footer{
 }
 
 .footerParent {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .footerDiv1 {
-   grid-area: 1 / 1 / 2 / 3;
    display: flex;
    align-items: flex-end;
    padding: 1em;
 }
 .footerDiv2 {
-   grid-area: 1 / 3 / 2 / 4;
    display: flex;
    align-items: center;
-   justify-content: right;
    gap: 3em;
-   margin-right: 4em;
 }
 
 .footerDiv2 img{
@@ -284,6 +315,10 @@ button a{
     text-decoration: none;
     transition: all 1s;
 }
+
+
+
+
 
 .accueilParent {
     display: grid;
