@@ -662,11 +662,12 @@ button a{
     background-color: #FFD166;
     font-family: Capriola;
     margin: 1em auto;
+    display: none;
 }
 
 #dates, #liaisons {
     width: 80%;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
