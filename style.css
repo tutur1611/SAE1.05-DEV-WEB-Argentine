@@ -1291,7 +1291,7 @@ img.displaySlide{
 /*---------------------------------------------------Perso Textes-----------------------------------------------------------*/
 .perso-bloc-titre{
   padding: 2px 50px 30px 50px;
-
+  background-color: #FFD166;
   text-align: right;
   border-radius: 13px;
   position: relative;
@@ -2024,7 +2024,6 @@ blockquote{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5em;
   margin: 2em auto;
   width: 100%;
   box-sizing: border-box;
@@ -2041,6 +2040,7 @@ blockquote{
   flex: 1 1 280px;
   max-width: 320px;
   box-sizing: border-box;
+  margin: 1em;
 }
 
 .carteDecouverte article h2 {
