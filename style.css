@@ -91,9 +91,6 @@ src: url(./static/polices/montserrat/Montserrat-Light.otf);
     font-size: 1em;
   }
 
-  #datesSelect {
-    display: none;
-  }
 
   #decouverte div:nth-child(2) {
     flex-direction: row;
@@ -662,7 +659,6 @@ button a{
     background-color: #FFD166;
     font-family: Capriola;
     margin: 1em auto;
-    display: none;
 }
 
 #dates, #liaisons {
@@ -1295,7 +1291,7 @@ img.displaySlide{
 /*---------------------------------------------------Perso Textes-----------------------------------------------------------*/
 .perso-bloc-titre{
   padding: 2px 50px 30px 50px;
-  background-color: #FFD166;
+
   text-align: right;
   border-radius: 13px;
   position: relative;
