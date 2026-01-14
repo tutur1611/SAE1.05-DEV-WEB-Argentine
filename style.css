@@ -91,9 +91,6 @@ src: url(./static/polices/montserrat/Montserrat-Light.otf);
     font-size: 1em;
   }
 
-  #datesSelect {
-    display: none;
-  }
 
   #decouverte div:nth-child(2) {
     flex-direction: row;
@@ -662,7 +659,6 @@ button a{
     background-color: #FFD166;
     font-family: Capriola;
     margin: 1em auto;
-    display: none;
 }
 
 #dates, #liaisons {
@@ -2028,7 +2024,6 @@ blockquote{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5em;
   margin: 2em auto;
   width: 100%;
   box-sizing: border-box;
@@ -2045,6 +2040,7 @@ blockquote{
   flex: 1 1 280px;
   max-width: 320px;
   box-sizing: border-box;
+  margin: 1em;
 }
 
 .carteDecouverte article h2 {
